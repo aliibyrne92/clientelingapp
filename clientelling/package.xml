@@ -14,16 +14,12 @@
         <members>AB_cartierWishListCtrl</members>
         <members>AB_configurationCtrl</members>
         <members>ActivityHistoryCtrl</members>
-        <members>Q_DFPurchaseReset</members>
         <name>ApexClass</name>
     </types>
     <types>
-        <members>Q_DFPurchaseReset</members>
         <name>ApexPage</name>
     </types>
     <types>
-        <members>ShipmentAccountTrigger</members>
-        <members>ShipmentProductTrigger</members>
         <name>ApexTrigger</name>
     </types>
     <types>
@@ -186,15 +182,12 @@
     </types>
     <types>
         <members>Appointment__c</members>
-        <members>Boutique__c</members>
         <members>Clienteling_App_Configuration__c</members>
-        <members>Item__c</members>
         <members>Outbound_SMS__c</members>
         <members>Purchase_Item__c</members>
         <members>Purchases__c</members>
         <members>RMA__c</members>
         <members>Recommended_Product__c</members>
-        <members>Shipment__c</members>
         <name>CustomObject</name>
     </types>
     <types>
@@ -203,15 +196,11 @@
     </types>
     <types>
         <members>Appointment__c-Appointment Layout</members>
-        <members>Boutique__c-Store Layout</members>
         <members>Clienteling_App_Configuration__c-Clienteling App Configuration Layout</members>
-        <members>Item__c-Inventory Layout</members>
         <members>Outbound_SMS__c-Outbound SMS Layout</members>
         <members>Purchase_Item__c-Purchase Item Layout</members>
-        <members>Purchases__c-Purchase History Layout</members>
-        <members>RMA__c-RMA Layout</members>
-        <members>Recommended_Product__c-Recommended Product Layout</members>
-        <members>Shipment__c-Shipment Layout</members>
+        <members>Purchases__c-Purchase History Layout</members>       
+ <members>Recommended_Product__c-Recommended Product Layout</members>
         <name>Layout</name>
     </types>
     <types>
@@ -228,8 +217,6 @@
         <name>ListView</name>
     </types>
     <types>
-        <members>Contact.Book_Appointment</members>
-        <members>RMA__c.Create_Shipment</members>
         <name>QuickAction</name>
     </types>
     <types>
