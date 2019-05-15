@@ -1,0 +1,47 @@
+.THIS .relatedTitle{
+    font-size: 2rem;
+    line-height: 2.2rem;
+    margin-left: 0.5rem;
+}
+
+/*.THIS .slds-icon {
+    width: 4rem;
+    height: 4rem;
+}*/
+
+.THIS .slds-card{
+        padding: 1rem;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 2px solid rgb(221, 219, 218);
+}
+
+.THIS .uiOutputText{
+    font-size:2rem;
+}
+
+.THIS .cuf-subPreamble .slds-text-body--small{
+    font-size:1.5rem;
+}
+
+.THIS .slds-post__footer{
+    font-size:1.2rem;
+}
+
+.THIS .inputTextArea.listSearch.input{
+    font-size:2rem; 
+}
+
+.THIS .inputTextArea.listSearch.input::placeholder{
+    font-size:2rem; 
+}
+
+.THIS .slds-text-color--weak {
+    color: rgb(107, 109, 112);
+    font-size: 1.5rem;
+}
+
+.THIS .forceChatterFeedInner.slds-card-wrapper {
+    margin-top: 1.5rem;
+}

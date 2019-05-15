@@ -1,0 +1,118 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="clickedContact" type="String"/>
+    
+    <div class="relatedContainer">
+        
+        <div class="relatedInnerContainer" aura:id="relatedInnerId">
+            <article class="slds-card slds-card_boundary forceBaseCard forceCard forceRelatedListCard 
+                            forceBaseCard forceCard forceRelatedListCard" style="padding: 1rem;">
+                <div class="slds-card__header slds-grid">
+                    <header class="slds-media slds-media--center slds-has-flexi-truncate">
+                        <div class="slds-media__figure">
+                            
+                            <lightning:icon iconName="standard:event" size="large" alternativeText="Event" />
+                            
+                        </div>
+                        <div class="slds-media__body" onclick="{!c.goToRec}">
+                            <h2 class="header-title-container">
+                                <span class="slds-card__header-title slds-truncate relatedTitle" title="Wish Lists (5)">Recommended</span>
+                            </h2>
+                        </div>
+                    </header>
+                </div>
+                
+            </article>
+            
+            <article class="slds-card slds-card_boundary forceBaseCard forceCard forceRelatedListCard 
+                            forceBaseCard forceCard forceRelatedListCard">
+                <div class="slds-card__header slds-grid">
+                    <header class="slds-media slds-media--center slds-has-flexi-truncate">
+                        <div class="slds-media__figure">
+                            
+                            <lightning:icon iconName="custom:custom43" size="large" alternativeText="Event" />
+                            
+                        </div>
+                        <div class="slds-media__body" onclick="{!c.goToWish}">
+                            <h2 class="header-title-container">
+                                <span class="slds-card__header-title slds-truncate relatedTitle" title="Wish Lists (2)">Wish Lists</span>
+                            </h2>
+                        </div>
+                    </header>
+                </div>
+                
+            </article>
+            
+            
+            <article class="slds-card slds-card_boundary forceBaseCard forceCard forceRelatedListCard 
+                            forceBaseCard forceCard forceRelatedListCard">
+                <div class="slds-card__header slds-grid">
+                    <header class="slds-media slds-media--center slds-has-flexi-truncate">
+                        <div class="slds-media__figure">
+                            
+                            <lightning:icon iconName="standard:performance" size="large" alternativeText="Event" />
+                            
+                        </div>
+                        <div class="slds-media__body" onclick="{!c.goToActivity}">
+                            <h2 class="header-title-container">
+                                <span class="slds-card__header-title slds-truncate relatedTitle" title="Wish Lists (2)">Activity</span>
+                            </h2>
+                        </div>
+                    </header>
+                </div>
+                
+            </article>
+            
+            
+            <article class="slds-card slds-card_boundary forceBaseCard forceCard forceRelatedListCard forceBaseCard forceCard forceRelatedListCard">
+                <div class="slds-card__header slds-grid">
+                    <header class="slds-media slds-media--center slds-has-flexi-truncate">
+                        <div class="slds-media__figure">
+                            
+                            <lightning:icon iconName="standard:feed" size="large" alternativeText="feed" />
+                            
+                        </div>
+                        <div class="slds-media__body" onclick="{!c.ChatterFeed}">
+                            <h2 class="header-title-container">
+                                <span class="slds-card__header-title slds-truncate relatedTitle" title="Chatter Feed">Chatter Feed</span>
+                            </h2>
+                        </div>
+                    </header>
+                </div>
+                
+            </article>
+            
+        </div>
+        
+        
+        
+        <div aura:id="relatedBodyId" class="slds-hide">
+            
+            <c:AB_cartierRecommendedList clickedContact="{!v.clickedContact}"/>            
+        </div>
+        
+        <div aura:id="wishListBody" class="slds-hide">
+            
+            <c:AB_cartierWishlistTab />                 
+        </div>
+        
+        <div aura:id="activityBody" class="slds-hide">
+            
+            <c:AB_cartierActivities clickedContact="{!v.clickedContact}" />                 
+        </div>
+        
+        <div aura:id="visualStudioBody" class="slds-hide">
+            
+            <c:AB_cartierVisualStudio />                 
+        </div>
+        
+        <div aura:id="chatterFeedBody" class="slds-hide">
+            
+           
+            
+             <forceChatter:feed subjectId="{!v.clickedContact}" type="Record" />
+        </div>
+        
+        
+    </div>
+    
+</aura:component>

@@ -1,0 +1,71 @@
+.THIS .emailHeader{
+    text-transform: uppercase;
+    font-size:2rem;
+    font-weight: 500;
+}
+
+.THIS .innerStoreContainer{
+    padding:2rem;
+    margin-bottom:100px;
+}
+
+.THIS ::placeholder { 
+    font-size:1.6rem!important;
+}
+
+.THIS.hide {
+    display: none;
+}
+
+.THIS.btn {
+    margin-bottom: 10px;
+}
+
+.THIS label.uiLabel {
+    padding-right: 12px;
+}
+
+.THIS .storeBttn{
+    width: 13rem;
+    height: 5rem;
+    font-size: 2.3rem;
+    margin-top: 2rem;
+    margin-right:1.5rem;
+    float:right;
+}
+
+.THIS .field{
+    padding: 5px;
+    border: 1px solid #dce4ec;
+    border-radius: 2px;
+    width: 100%;
+    font-size: 2.38em;
+    line-height: 5rem;
+    margin-bottom: 1.5rem;
+}
+
+.THIS .successPopTwo{
+    position:absolute;
+    top:0;
+    width:100%;
+    height: 4rem;
+    display:none;
+}
+
+.THIS .slds-notify_toast{
+    width:100%;
+    line-height:4rem;
+}
+
+.THIS h2.slds-text-heading_small {
+    font-size:1.8rem;
+}
+
+.THIS .whiteUtility{
+    color:white!important;
+    fill:white!important;
+}
+
+.THIS .slds-icon-text-default {
+    fill:white!important;
+}

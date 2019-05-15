@@ -1,0 +1,33 @@
+<aura:component controller="AB_cartierHistoryListCtrl" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="clickedContact" type="String"/>
+    <aura:attribute name="purchases" type="Purchases__c[]"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInitProd}"/>
+    
+    <div class="productContainer">
+        
+        <div class="slds-text-heading_medium listTitle">Purchase History</div>
+        
+        <lightning:layout multipleRows="true">
+            <aura:iteration items="{!v.purchases}" var="p">
+                <lightning:layoutItem size="6" padding="around-small">
+                    <div class="custom-box">
+                        <div class="prodImageBox">
+                            <aura:if isTrue="{!empty(p.Product__r.Image__c)}">
+                                <img src="{!$Resource.genericCart}" class="image"/>
+                                <aura:set attribute="else">
+                                    <img class="slds-align--absolute-center image" src="{!$SfdcSite.pathPrefix + '/servlet/servlet.FileDownload?file=' + p.Product__r.Image__c}"/>
+                                </aura:set>   
+                            </aura:if>
+                        </div>
+                        <div class="slds-text-heading_small prodName">{!p.Product__r.Name}</div>
+                        <p class="slds-text-heading--small priceName">
+
+                        </p>
+                    </div>
+                </lightning:layoutItem>
+            </aura:iteration>
+        </lightning:layout>
+        
+        
+    </div>
+</aura:component>

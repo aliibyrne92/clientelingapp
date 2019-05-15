@@ -1,0 +1,36 @@
+<aura:component controller="AB_cartierUserController" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="myUser" type="User" />
+    
+    <aura:handler name="init" action="{!c.init}" value="{!this}" />
+    <aura:attribute name="today" type="Date" />
+    
+    
+    <div class="outerContainerUser">
+        <div class="innerContainerUser">
+            <lightning:layout horizontalAlign="center" verticalAlign="center">
+                <lightning:layoutItem size="4" padding="around-small">
+                    <div class="custom-box2"> 
+                        <aura:if isTrue="{!empty(v.myUser.MediumPhotoUrl)}">
+                            <img src="{!$Resource.avatarGeneric}" id="userBox"/>
+                            <aura:set attribute="else">
+                                <img src="{!v.myUser.MediumPhotoUrl}" id="userBox"/>
+                            </aura:set>   
+                        </aura:if>
+                        
+                    </div>
+                </lightning:layoutItem>
+                <lightning:layoutItem size="8" padding="around-small">
+                    <div class="custom-box2">
+                        <div class="slds-text-heading_large greetText">Hi {!v.myUser.Name}</div>
+                        <div class="slds-text-heading_medium subText">{!v.myUser.City}, {!v.myUser.Country} </div>
+                        <div class="slds-text-heading_medium subText"> <ui:outputDate value="{!v.today}" /></div>
+                    </div>
+                </lightning:layoutItem>
+            </lightning:layout>
+            
+            
+        </div>
+        
+    </div>
+    
+</aura:component>

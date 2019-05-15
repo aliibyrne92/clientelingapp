@@ -1,0 +1,39 @@
+.THIS .labelSize{
+    font-size:1.5rem;
+}
+
+.THIS .formStatic{
+    font-size:1.7rem;
+}
+
+.THIS .slds-grid{
+    border-bottom: 0.825rem solid white;
+}
+
+.THIS .slds-item_label{
+    font-size:1.7rem;
+}
+
+.THIS .slds-item_detail{
+    font-size:1.7rem;
+}
+
+.THIS #sf1Contacts {
+    
+    display:none;
+}
+ 
+
+.THIS #sf1ContactsBirth {
+    
+    display:none;
+}
+ 
+
+.THIS.sf1Fix #sf1Contacts {
+    display: block; 
+}
+
+.THIS.sf1Fix #sf1ContactsBirth {
+    display: block; 
+}

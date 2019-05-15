@@ -1,0 +1,72 @@
+<aura:component >
+    <aura:attribute name="isSF1" type="boolean" />
+    
+    <div class="{!v.isSF1 ? 'sf1Fix outerContainerUtility' : 'outerContainerUtility'}">
+        
+        <lightning:layout>
+            <lightning:layoutItem flexibility="auto" padding="around-small">
+                <div class="custom-box">
+                    <aura:if isTrue="{!v.isSF1}">
+                        <lightning:icon iconName="action:recall" onclick="{!c.reloadHome}" size="small" alternativeText="Home" />
+                        <aura:set attribute="else">
+                            <lightning:icon iconName="action:recall" onclick="{!c.reloadHome}"  size="large" alternativeText="Home" />
+                        </aura:set>
+                        
+                    </aura:if>
+                    
+                </div>
+            </lightning:layoutItem>
+            <lightning:layoutItem flexibility="auto" padding="around-small">
+                <div class="custom-box">
+                    <aura:if isTrue="{!v.isSF1}">
+                        <lightning:icon iconName="action:add_contact" onclick="{!c.openNewContact}" size="small" alternativeText="Contacts" />
+                        <aura:set attribute="else">
+                            <lightning:icon iconName="action:add_contact" onclick="{!c.openNewContact}" size="large" alternativeText="Contacts" />
+                        </aura:set>
+                        
+                    </aura:if>
+                    
+                </div>
+            </lightning:layoutItem>
+            <lightning:layoutItem flexibility="auto" padding="around-small">
+                <div class="custom-box">
+                    <aura:if isTrue="{!v.isSF1}">
+                        <lightning:icon iconName="action:new_event" size="small" onclick="{!c.openCalendar}" alternativeText="Appointments"  />
+                        <aura:set attribute="else">
+                            <lightning:icon iconName="action:new_event" size="large" onclick="{!c.openCalendar}" alternativeText="Appointments"  />
+                        </aura:set>
+                        
+                    </aura:if>
+                    
+                </div>
+            </lightning:layoutItem>
+            <lightning:layoutItem flexibility="auto" padding="around-small">
+                <div class="custom-box">
+                    <aura:if isTrue="{!v.isSF1}">
+                        <lightning:icon iconName="action:manage_perm_sets" onclick="{!c.openCatalog}" size="small" alternativeText="Catalog" />
+                        <aura:set attribute="else">
+                            <lightning:icon iconName="action:manage_perm_sets" onclick="{!c.openCatalog}" size="large" alternativeText="Catalog" />
+                        </aura:set>
+                        
+                    </aura:if>
+                    
+                </div>
+            </lightning:layoutItem>
+            <lightning:layoutItem flexibility="auto" padding="around-small">
+                <div class="custom-box">
+                    <aura:if isTrue="{!v.isSF1}">
+                        <lightning:icon iconName="action:log_event" onclick="{!c.openAppointments}" size="small" alternativeText="More" />
+                        <aura:set attribute="else">
+                            <lightning:icon iconName="action:log_event" onclick="{!c.openAppointments}" size="large" alternativeText="More" />
+                        </aura:set>
+                        
+                    </aura:if>
+                    
+                </div>
+            </lightning:layoutItem>
+        </lightning:layout>
+        
+        
+    </div>
+    
+</aura:component>

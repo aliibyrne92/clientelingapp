@@ -1,0 +1,59 @@
+<aura:component controller="AB_carterStoreVisitCtrl" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>  
+    <aura:attribute name="today" type="Date" default=""/>
+    
+    
+    <div class="outerCallContainer">
+        <div class="innerCallContainer">
+            
+            <div class="slds-text-heading_medium emailHeader">Record Call Notes</div>
+            
+            <div class="slds-form-element" style="margin-top: 2rem;">
+                <label class="slds-form-element__label" style="    margin-right: 1rem;">Phone</label>
+                <lightning:icon iconName="utility:call" alternativeText="Utility call" />   <a class="numberText" href="tel:+41793265708">(+41) 793265708</a>
+            </div>
+            
+            
+            <div class="slds-form-element" style="margin-top: 1rem;">
+                <label class="slds-form-element__label" for="descriptionCall">Notes</label>
+                <div class="slds-form-element__control">
+                    <textarea id="descriptionCall" class="slds-textarea" placeholder="Description.."></textarea>
+                </div>
+            </div>
+            
+            <div class="slds-form-element" style="margin-top: 0.5rem;">
+                <label class="slds-form-element__label" for="form-element-01">Date</label>
+                <div class="slds-form-element__control"> 
+                    <ui:inputDate aura:id="callDate" class="field" value="{!v.today}" displayDatePicker="true" />
+                </div>
+            </div>
+            
+            <lightning:button variant="brand" class="storeBttn" label="Add" onclick="{!c.newCall}" />
+            
+            <lightning:button label="Cancel" class="storeBttn" title="Neutral action" onclick="{!c.cancelCall}"/>
+            
+            
+        </div>
+        
+        <div class="successPopCall" aura:id="modalBoxCall">
+            <div class="slds-notify_container slds-is-relative">
+                <div class="slds-notify slds-notify_toast slds-theme_success" role="status">
+                    <span class="slds-assistive-text">success</span>
+                    <span class="slds-icon_container slds-icon-utility-success slds-m-right_small slds-no-flex slds-align-top" title="Description of icon when needed">
+                        <lightning:icon iconName="utility:success" class="whiteUtility" size="small" alternativeText="Utility success" />
+                    </span>
+                    <div class="slds-notify__content">
+                        <h2 class="slds-text-heading_small">Your call has been recorded</h2>
+                    </div>
+                    <div class="slds-notify__close">
+                        <button class="slds-button slds-button_icon slds-button_icon-inverse" title="Close">
+                            <lightning:icon iconName="utility:close" class="whiteUtility" size="small" alternativeText="Utility close" />
+                            <span class="slds-assistive-text">Close</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        
+    </div>
+</aura:component>

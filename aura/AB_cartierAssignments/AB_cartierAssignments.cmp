@@ -1,0 +1,87 @@
+<aura:component controller="AB_cartierAssignmentsCtrl" implements="flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/> 
+    <aura:attribute name="myTasks" type="Task[]"/>
+    <aura:attribute name="checkVal" type="String"/>
+    <aura:attribute name="clickedContact" type="String"/>
+    
+    <div class="outerContainer">
+        
+        <div class="demo-grid">
+            <aura:iteration items="{!v.myTasks}" var="t">
+                
+                <lightning:layout>
+                    <lightning:layoutItem size="2" padding="around-small">
+                        <div class="custom-box">
+                            <div class="slds-media__figure" data-value="{!t.WhoId}" onclick="{!c.gotoContact}">
+                                <span class="slds-avatar slds-avatar_circle slds-avatar_large">
+                                    <aura:if isTrue="{!empty(t.Contact_Pic_URL__c)}">
+                                        <img src="{!$Resource.avatarGeneric}" id="userBox"/>
+                                        <aura:set attribute="else">
+                                            <img src="{!t.Contact_Pic_URL__c}" id="userBox"/>
+                                        </aura:set>   
+                                    </aura:if>
+                                </span>
+                            </div> 
+                            <div class="slds-text-body_regular nameText">
+                                {!t.Who.Name} 
+                            </div>
+                        </div>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="8" padding="around-small">
+                        <div class="custom-box cusPad">
+                            <div class="slds-media__body" style="margin-left: 2rem;">
+                                <h3 class="slds-tile__title slds-truncate subjectTitle" title="{!t.Subject}">
+                                    <a href="javascript:void(0);" style="color: rgb(22, 50, 92);">{!t.Subject}</a>
+                                </h3>
+                                <div class="slds-tile__detail dateText">
+                                    <p class="slds-truncate" title="Assignee">
+                                        Due Date:  <ui:outputDate value="{!t.ActivityDate}"/> 
+                                    </p>
+                                </div> 
+                                
+                                
+                            </div>
+                        </div>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="2" padding="around-small">
+                        <aura:if isTrue="{! (t.Status == 'Complete')}">
+                            <img src="{!$Resource.taskComplete}" class="statusIcons"/>
+                            <div class="slds-text-body_regular statusText">
+                                {!t.Status} 
+                            </div>
+                            <aura:set attribute="else">
+                                
+                                <aura:if isTrue="{! (t.Status == 'In Progress')}">
+                                    <img src="{!$Resource.statusProgress}" class="statusIcons"/>
+                                    <div class="slds-text-body_regular statusText">
+                                        {!t.Status} 
+                                    </div>
+                                    <aura:set attribute="else">
+                                        <aura:if isTrue="{! (t.Status == 'On Hold')}">
+                                            <img src="{!$Resource.statusHold}" class="statusIcons"/>
+                                            <div class="slds-text-body_regular statusText">
+                                                {!t.Status} 
+                                            </div>
+                                            <aura:set attribute="else">
+                                                <img src="{!$Resource.statusNotStarted}" class="statusIcons"/>
+                                                <div class="slds-text-body_regular statusText">
+                                                    {!t.Status} 
+                                                </div>
+                                            </aura:set> 
+                                        </aura:if>
+                                    </aura:set>
+                                </aura:if>
+                            </aura:set>
+                        </aura:if>
+                        
+                        
+                    </lightning:layoutItem> 
+                </lightning:layout> 
+                
+                
+            </aura:iteration>
+        </div> 
+        
+    </div>
+    
+</aura:component>

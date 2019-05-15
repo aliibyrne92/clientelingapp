@@ -1,0 +1,248 @@
+<aura:component controller="AB_cartierContactRecordCtrl" implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:handler name="change" value="{!v.clickedContact}" action="{!c.doInitCon}"/>
+    <aura:attribute name="activeTabContact" type="String" default="Profile"/>
+    <aura:attribute name="myContact" type="Contact" /> 
+    <aura:attribute name="clickedContact" type="String"/> 
+    
+    <aura:handler event="c:AB_cartierShowCatalog" action="{!c.handleCatalogEventTwo}"/>
+    <aura:handler event="c:AB_cartierShowContact" action="{!c.handleContactEventTwo}"/>
+    
+    <div class="outerContainerUser">
+        
+        <div class="contactProfileContainer" aura:id="profileHolder">
+            <lightning:layout horizontalAlign="center" verticalAlign="center">
+                <lightning:layoutItem size="4" padding="around-small">
+                    <div class="custom-box3"> 
+                        <aura:if isTrue="{!empty(v.myContact.Cust360_Contact_Picture_URL__c)}">
+                            <img src="{!$Resource.avatarGeneric}" id="contactImg"/>
+                            <aura:set attribute="else">
+                                <img src="{!v.myContact.Cust360_Contact_Picture_URL__c}" id="contactImg"/>
+                            </aura:set>   
+                        </aura:if>
+                    </div>
+                </lightning:layoutItem>
+                <lightning:layoutItem size="8" padding="around-small">
+                    <div class="custom-box3">
+                        <div class="slds-text-heading_large greetText">{!v.myContact.Name}</div>
+                        <div class="iconBox"> 
+                            <lightning:layout>
+                                
+                                <lightning:layoutItem padding="around-small">
+                                    
+                                    <lightning:icon class="iconPad" iconName="utility:email" onclick="{!c.gotoEmail}" size="large" alternativeText="Utility email" />
+                                    
+                                </lightning:layoutItem>
+                                
+                                <lightning:layoutItem padding="around-small">
+                                    
+                                    <lightning:icon class="iconPad" iconName="utility:chat" size="large" alternativeText="Utility chat" />
+                                    
+                                </lightning:layoutItem>
+                                
+                                <lightning:layoutItem padding="around-small">
+                                    <lightning:icon class="iconPad" iconName="utility:phone_portrait" onclick="{!c.gotoCall}" size="large" alternativeText="Utility phone_portrait" />
+                                    
+                                </lightning:layoutItem>
+                                
+                                <lightning:layoutItem padding="around-small">
+                                    <lightning:icon class="iconPad" iconName="utility:checkin" onclick="{!c.gotoVisit}" size="large" alternativeText="Utility checkin" />
+                                    
+                                </lightning:layoutItem>
+                                
+                                <lightning:layoutItem padding="around-small">
+                                    <div id="weChatLogo" onclick="{!c.gotoWeChat}"></div>
+                                    
+                                </lightning:layoutItem>
+                                
+                            </lightning:layout>
+                            
+                        </div>
+                    </div>
+                </lightning:layoutItem>
+            </lightning:layout>
+            
+            
+        </div>
+        
+        <div aura:id="contactTabBody">
+            
+            <div class="tabHolderContact">
+                <lightning:layout horizontalAlign="center">
+                    <lightning:layoutItem size="4">
+                        <div class="{!v.activeTabContact == 'Profile' ? 'active tab' : 'tab'}" data-tabName="Profile" onclick="{!c.tabClick}">
+                            Profile
+                        </div>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="4">
+                        <div class="{!v.activeTabContact == 'Belongings' ? 'active tab' : 'tab'}" data-tabName="Belongings" onclick="{!c.tabClick}">
+                            History
+                        </div>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="4">
+                        <div class="{!v.activeTabContact == 'More' ? 'active tab' : 'tab'}" data-tabName="More" onclick="{!c.tabClick}">
+                            More
+                        </div>
+                    </lightning:layoutItem>
+                </lightning:layout>
+            </div>
+            
+            
+            <div class="bodyHolder">
+                <aura:if isTrue="{!v.activeTabContact == 'Profile'}">
+                    
+                    <div class="contactRecordContainer" aura:id="contactView">
+                        <aura:if isTrue="{! not( empty( v.clickedContact ) ) }">
+                            <lightning:recordViewForm recordId="{!v.clickedContact}" objectApiName="Contact">
+                                
+                                <div class="slds-form slds-form_stacked forcePageBlockItemView" role="list">
+                                    
+                                    <lightning:outputField class="outPutCSS" label="Notes" fieldName="Description" />
+                                    
+                                    
+                                    <h3 class="slds-section__title slds-theme--shade  test-id__section-header-container">
+                                        <span class="test-id__section-header-title section-header-title slds-p-horizontal--small slds-truncate">
+                                            Contact Information</span>
+                                    </h3>
+                                    
+                                    <lightning:outputField class="outPutCSS" fieldName="Name" />
+                                    <lightning:outputField class="outPutCSS" fieldName="Gender__c" />
+                                    <lightning:outputField class="outPutCSS" fieldName="Phone" />
+                                    <lightning:outputField class="outPutCSS" fieldName="Email" />
+                                    <lightning:outputField class="outPutCSS" fieldName="Phone" />
+                                    <lightning:outputField class="outPutCSS" fieldName="Birthdate" />
+                                    <lightning:outputField class="outPutCSS" fieldName="Occupation__c" />
+                                    <lightning:outputField class="outPutCSS" fieldName="Customer_Rewards__c" />
+                                    <lightning:outputField class="outPutCSS" fieldName="LeadSource" />
+                                    
+                                    
+                                </div>
+                            </lightning:recordViewForm>
+                        </aura:if>
+                        <button onclick="{!c.editContact}" class="slds-button slds-button_neutral slds-button_stateful slds-not-selected editBttn" aria-live="assertive">
+                            <span class="slds-text-not-selected">
+                                <lightning:buttonIcon iconName="utility:edit" size="large" alternativeText="Settings" />
+                                Edit</span>
+                        </button> 
+                        
+                    </div>
+                    
+                    <div class="slds-hide" aura:id="contactEdit">
+                        
+                        <div id="editPanel">
+                            
+                            <lightning:layout>
+                                <lightning:layoutItem size="3" padding="around-small">
+                                    <lightning:button label="Cancel" class="conBtts" onclick="{!c.cancelEdit}"/>
+                                </lightning:layoutItem>
+                                <lightning:layoutItem size="6" padding="around-small">
+                                    <div class="slds-text-heading_medium" style="text-align: center; font-size: 2.5rem;">Edit Contact</div>
+                                </lightning:layoutItem>
+                                <lightning:layoutItem size="3" padding="around-small">
+                                    <lightning:button variant="brand" class="conBttsTwo" label="Save" onclick="{!c.updateContactRecord}" />
+                                </lightning:layoutItem>
+                            </lightning:layout>
+                            
+                            
+                        </div>
+                        
+                        <lightning:recordEditForm aura:id="recordViewForm" recordId="{!v.clickedContact}" objectApiName="Contact">
+                            
+                            <div class="slds-form slds-form_stacked forcePageBlockItemView" style="padding: 2rem;" role="list">
+                                
+                                <lightning:inputField aura:id="description" fieldName="Description" />
+                                
+                                <h3 class="slds-section__title slds-theme--shade  test-id__section-header-container">
+                                    <span class="test-id__section-header-title section-header-title slds-p-horizontal--small slds-truncate">
+                                        Contact Information</span>
+                                </h3>
+                                
+                                <lightning:inputField aura:id="fName" fieldName="FirstName" />
+                                <lightning:inputField aura:id="lName" fieldName="LastName" />
+                                <lightning:inputField aura:id="genderEdit" fieldName="Gender__c" />
+                                <lightning:inputField aura:id="Phone" fieldName="Phone" />
+                                <lightning:inputField aura:id="Email" fieldName="Email" />
+                                <lightning:inputField aura:id="Birthdate" fieldName="Birthdate" />
+                                <lightning:inputField aura:id="Occupation" fieldName="Occupation__c" />
+                                <lightning:inputField aura:id="LeadSource" fieldName="LeadSource" />
+                                
+                            </div>
+                        </lightning:recordEditForm>
+                        
+                    </div>
+                    
+                    <aura:set attribute="else">
+                        <aura:if isTrue="{!v.activeTabContact == 'Belongings'}">
+                            
+                            <c:AB_cartierHistoryList clickedContact="{!v.clickedContact}"/>
+                            
+                            <aura:set attribute="else">
+                                <c:AB_cartierRelatedList clickedContact="{!v.clickedContact}"/>
+                            </aura:set>
+                        </aura:if>
+                    </aura:set>
+                </aura:if>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div aura:id="iconBody">
+            <div aura:id="smsBody" class="slds-hide">
+                <c:AB_cartierSMS />
+                
+                
+            </div>
+            
+            <div aura:id="emailBody" class="slds-hide">
+                <c:AB_cartierEmail />
+                
+                
+            </div>
+            
+            <div aura:id="storeBody" class="slds-hide">
+                <c:AB_cartierStoreVisit />
+                
+                
+            </div> 
+            
+            <div aura:id="chatBody" class="slds-hide">
+                <c:AB_cartierWeChat />
+                
+                
+            </div>
+            
+            <div aura:id="callBody" class="slds-hide">
+                <c:AB_cartierRecordCall />
+                
+                
+            </div>
+            
+            
+            
+        </div>
+        
+        <div class="successPop" aura:id="modalBox">
+            <div class="slds-notify_container slds-is-relative">
+                <div class="slds-notify slds-notify_toast slds-theme_success" role="status">
+                    <span class="slds-assistive-text">success</span>
+                    <span class="slds-icon_container slds-icon-utility-success slds-m-right_small slds-no-flex slds-align-top" title="Description of icon when needed">
+                        <lightning:icon iconName="utility:success" size="small" alternativeText="Utility success" />
+                    </span>
+                    <div class="slds-notify__content">
+                        <h2 class="slds-text-heading_small">Contact 
+                            <a href="javascript:void(0);">{!v.myContact.Name}</a> has been updated.</h2>
+                    </div>
+                    <div class="slds-notify__close">
+                        <button class="slds-button slds-button_icon slds-button_icon-inverse" title="Close">
+                            <lightning:icon iconName="utility:close" size="small" alternativeText="Utility close" />
+                            <span class="slds-assistive-text">Close</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</aura:component>

@@ -1,0 +1,98 @@
+<aura:component controller="AB_carterStoreVisitCtrl">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="myUser" type="User" />
+
+    <div class="chatOuterContainer">
+        <div id="topBanner">
+            <lightning:icon iconName="utility:back" class="backIcon" alternativeText="Utility image" /> Customer
+        </div>
+        
+        <div class="chatInnerContainer" style="padding: 2rem;">
+            
+            <section role="log" class="slds-chat">
+                <ul class="slds-chat-list">
+                    <li class="slds-chat-listitem slds-chat-listitem_bookend">
+                        <div class="slds-chat-bookend">
+                            <span class="slds-icon_container slds-icon-utility-chat slds-chat-icon">
+                                <lightning:icon iconName="utility:chat" alternativeText="Utility chat" />
+                            </span>
+                            <p>Chat started by
+                                <b>{!v.myUser.Name}</b> • 4:58 PM</p>
+                        </div>
+                    </li>
+                    
+                    <li class="slds-chat-listitem slds-chat-listitem_outbound">
+                        <div class="slds-chat-message">
+                            <div class="slds-chat-message__body">
+                                <div class="slds-chat-message__text slds-chat-message__text_outbound">
+                                    <span>Dear Customer, I am looking forward to welcoming you on the 2nd of april at 2pm in our store. 
+                                        Should you have any specific request, do not hesitate to contact me. Best Regards, {!v.myUser.Name}
+                                        
+                                    </span>
+                                </div>
+                                <div class="slds-chat-message__meta" aria-label="{!'said' + v.myUser.Name + ' at 4:59 PM'}">{!v.myUser.Name} • 4:59 PM</div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="slds-chat-listitem slds-chat-listitem_inbound">
+                        <div class="slds-chat-message">
+                            <div class="slds-chat-message__body">
+                                <div class="slds-chat-message__text slds-chat-message__text_inbound">
+                                    <span>Thank you {!v.myUser.Title}. {!v.myUser.FirstName} !</span>
+                                </div>
+                                 <div class="slds-chat-message__meta" aria-label="said Taylor Watson-Rice at 4:59 PM">Customer • 4:59 PM</div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    
+                </ul>
+            </section>
+            
+            <li class="slds-chat-listitem slds-chat-listitem_outbound slds-hide" aura:id="msg">
+                <div class="slds-chat-message">
+                    <div class="slds-chat-message__body">
+                        <div class="slds-chat-message__text slds-chat-message__text_outbound">
+                            <span>
+                                <ui:outputTextArea aura:id="oTextarea" value=""/>
+                            </span>
+                            
+                        </div>
+                        <div class="slds-chat-message__meta" aria-label="said Amber Cann at 4:59 PM">{!v.myUser.Name} • 5:10 PM</div>
+                    </div>
+                </div>
+            </li>
+            
+            
+            
+            <div class="keyboardSection">
+                <lightning:layout multipleRows="true">
+                    
+                    <lightning:layoutItem size="10">
+                        <div class="">
+                            <ui:inputTextArea aura:id="comments" class="slds-textarea chatTextarea" value="Hey!" rows="5"/>
+                        </div>
+                    </lightning:layoutItem>
+                    
+                    <lightning:layoutItem size="2">
+                        <div class="" >
+                            <lightning:button variant="brand" class="chatSubmit" label="Submit" onclick="{!c.setOutput}" />       
+                        </div>
+                    </lightning:layoutItem>
+                    
+                    
+                </lightning:layout>
+                
+                
+                
+            </div>
+            
+            
+            
+            
+        </div>
+        
+        
+    </div>
+</aura:component>

@@ -1,0 +1,67 @@
+.THIS .slds-avatar_large, .THIS .slds-avatar--large {
+    width: 10rem!important;
+    height: 10rem!important;
+}
+
+.THIS #userBox{
+    height: 10rem;
+    width: 10rem;
+    cursor:pointer;
+}
+
+.THIS .statusIcons{
+    width: 85px;
+    margin-top: 30px;
+    text-align: center;
+    margin-left: 15px;
+    
+}
+
+.THIS .subjectTitle{
+    font-size:2rem!important;
+}
+
+.THIS input {
+    height: 3rem!important;
+    width: 3rem!important;
+}
+
+.THIS .cusPad{
+    padding-top:2rem;
+    margin-left: 1rem;
+}
+
+.THIS .slds-grid{
+    border-bottom: 1px solid #ccc;
+    margin-top: 0.5rem;
+}
+
+.THIS .demo-grid{
+    background-color: white;
+    padding: 2rem;
+}
+
+
+.THIS .nameText{
+    font-size: 1.5rem;
+    width: 160px;
+    text-align: center;
+}
+
+.THIS .statusText{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 13px;
+}
+
+.THIS .dateText{
+    font-size: 1.6rem;
+    margin-top:10px;
+}
+
+
+.THIS .iconTasks{
+    height: 104px;
+    margin-top: 17px;
+    
+}

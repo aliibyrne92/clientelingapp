@@ -1,0 +1,179 @@
+.THIS #contactImg{
+    height:17rem;
+    width:17rem;
+    border-radius:50%;
+    margin: auto;
+    background-size: cover;
+    border: 9px solid #cfcfcf;
+    
+}
+
+.THIS .successPop{
+    position:absolute;
+    top:0;
+    width:100%;
+    height: 4rem;
+    display:none;
+}
+
+.THIS .slds-form-element.slds-form-element_readonly{
+    padding:2rem!important;
+}
+
+.THIS .field{
+    padding: 5px;
+    border: 1px solid #dce4ec;
+    border-radius: 2px;
+}
+
+.THIS .outPutCSS{
+    margin-top:1.5rem;
+}
+
+
+.THIS .slds-form-element__static {
+    font-size: 2.38rem;
+}
+
+.THIS .slds-textarea {
+    font-size: 2.38rem;
+}
+
+
+.THIS .contactProfileContainer{
+    margin-top:3rem;
+    margin-bottom:3rem;
+}
+
+.THIS .greetText{
+    font-size:5rem!important;
+    margin-bottom: 1rem;
+}
+
+.THIS .subText{
+    font-size:2rem!important;
+}
+
+.THIS .custom-box3{
+    padding-left:3rem;
+}
+
+.THIS .tab{
+    text-align: center;
+    font-size: 2em;
+    line-height: 40px;
+    padding-bottom: 0.5em;
+    text-transform: uppercase;
+    border-bottom: 2.5px solid rgb(221, 219, 218);
+}
+.THIS .tab.active{
+    border-bottom: 2.5px solid #337ab7;
+}
+
+.THIS .custom-box{
+    padding:1rem;
+}
+
+.THIS .iconPad{
+    padding-right: 1rem;
+}
+
+.THIS .bodyHolder{
+    background-color:white;
+    overflow: scroll;
+    height: 1750px;
+}
+
+
+
+.THIS .slds-section__title {
+    font-size: 2rem!important;
+    line-height: 5.875rem!important;
+}
+
+.THIS .contactRecordContainer{
+    position:relative;
+    padding:2rem;
+}
+
+.THIS .editBttn{
+    width: 9rem;
+    height: 4rem;
+    line-height: 3rem;
+    border: 1px solid black;
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
+    font-size: 1.7rem;
+}
+
+.THIS .slds-button__icon {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.THIS .conBtts{
+    width: 10rem;
+    height: 4.5rem;
+    font-size: 2rem;
+}
+
+.THIS .conBttsTwo{
+    float:right;
+    width: 10rem;
+    height: 4.5rem;
+    font-size: 2rem;
+}
+
+.THIS #editPanel{
+    padding: 1rem;
+    margin-top:1rem;
+    border-bottom: 2px solid rgb(221, 219, 218);
+}
+
+.THIS #weChatLogo{
+    height: 3.3rem;
+    width: 4.1rem;
+    background-size: cover;
+    background-image:url('/resource/weChat');
+}
+
+
+
+/* SF FIXES */
+
+
+.THIS.sf1Fix #contactImg{
+    height:7rem;
+    width:7rem;
+    border: 4px solid #cfcfcf;
+    
+}
+
+.THIS.sf1Fix .contactProfileContainer{
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+
+.THIS.sf1Fix .custom-box3{
+    padding-left:0.5rem;
+}
+
+.THIS.sf1Fix .greetText{
+    font-size:2rem!important;
+    margin-bottom: 0rem;
+}
+
+.THIS.sf1Fix .subText{
+    font-size:0.85rem!important;
+}
+
+.THIS.sf1Fix .iconPad{
+    padding-right: 0rem;
+}
+
+.THIS.sf1Fix #weChatLogo{
+    
+    height: 1.7rem;
+    width: 2rem;
+}

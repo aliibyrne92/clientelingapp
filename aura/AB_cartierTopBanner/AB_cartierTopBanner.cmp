@@ -1,0 +1,35 @@
+<aura:component controller="AB_configurationCtrl" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="myConfig" type="Clienteling_App_Configuration__c" />
+    
+    <div class="outerContainer">
+        <div class="topBanner">
+            <lightning:layout horizontalAlign="center" verticalAlign="center">
+                <lightning:layoutItem size="2" padding="around-small">
+                    <div class="custom-box"> 
+                        <lightning:icon iconName="utility:chevronleft" onclick="{!c.returnContact}" size="large" alternativeText="Back Button" />
+                        
+                    </div>
+                    
+                </lightning:layoutItem>
+                <lightning:layoutItem size="8" padding="around-small">
+                    <div class="custom-box">
+                        <aura:if isTrue="{!empty(v.myConfig.Logo_Resource_Name__c)}">
+                            <div id="logoBox" style="background-image: url(/resource/alpineLogo2); width:425px; height:90px;"></div>
+                            <aura:set attribute="else">
+                                <div id="logoBox" style="{!'background-image: url(/resource/'+ v.myConfig.Logo_Resource_Name__c + '); width:' + v.myConfig.Logo_Width__c + 'px; height:' + v.myConfig.Logo_Height__c + 'px;'}"></div>
+                            </aura:set>   
+                        </aura:if>
+                    </div>
+                </lightning:layoutItem>
+                <lightning:layoutItem size="2" padding="around-small">
+                    <div class="custom-box"> 
+                        
+                    </div>
+                </lightning:layoutItem>
+            </lightning:layout>
+        </div>
+        
+    </div>
+    
+</aura:component>

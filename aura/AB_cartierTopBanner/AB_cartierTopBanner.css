@@ -1,0 +1,17 @@
+.THIS .topBanner{
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.27rem solid #eae9e9;
+}
+
+.THIS #logoBox{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: auto;
+}
+
+.THIS .slds-icon-text-default {
+    fill: #bebebe!important;
+}

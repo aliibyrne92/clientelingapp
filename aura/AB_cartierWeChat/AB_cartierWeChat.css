@@ -1,0 +1,73 @@
+.THIS .slds-chat-message__text_outbound {
+    font-size: 2em;
+}
+
+.THIS .slds-chat-message__meta {
+    font-size: 1.2rem;
+}
+
+.THIS .slds-chat-message__text_inbound{
+    font-size:2em;
+}
+
+.THIS .slds-chat-bookend {
+    font-size: 1.78em;
+}
+
+
+.THIS #topBanner{
+    height:7rem;
+    width:100%;
+    background-color: #393A3F;
+    color:white;
+    font-size: 2.38rem;
+    line-height: 7rem;
+}
+
+.THIS .backIcon{
+    margin-left: 3rem;
+    color:white;
+}
+
+.THIS .slds-chat-message__text_outbound {
+    background-color: #7bb32e;
+}
+
+.THIS .keyboardSection{
+    position: absolute;
+    bottom: 70px;
+    width: 100%;
+}
+
+.THIS .chatTextarea{
+    height:4rem;
+    font-size: 2em;
+}
+
+.THIS .chatSubmit{
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.THIS.hide {
+ 	display: none;
+ }
+ 
+ .THIS.btn {
+ 	margin-bottom: 10px;
+ }
+
+.THIS label.uiLabel {
+    padding-right: 12px;
+}
+
+.THIS textarea {
+	border: 1px solid #dce4ec;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.THIS .chatTextarea{
+    width:98%;
+}

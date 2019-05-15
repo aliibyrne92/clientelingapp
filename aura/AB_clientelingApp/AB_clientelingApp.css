@@ -1,0 +1,37 @@
+.THIS .utilityContainer{
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    padding-top: 1rem;
+    border-top: .27rem solid #eae9e9;
+    background-color: #FAFAF9;
+        z-index: 9999;
+}
+
+.THIS .outerContainerMain{
+    background-color:white;
+}
+
+.THIS .slds-form-element__label{
+    font-size:2.2em;
+}
+
+.THIS .slds-input {
+    font-size: 2.38em;
+    line-height: 5rem;
+}
+
+.THIS .slds-select {
+    height: 5rem;
+    font-size: 2.38rem;
+}
+
+.THIS .forceChatterStyle .forceChatterEntityPhoto.standardSize {
+    width: 4rem!important;
+    height: 4rem!important;
+}
+
+.THIS .forceChatterStyle .cuf-preamble {
+    font-size: 2rem!important;
+}

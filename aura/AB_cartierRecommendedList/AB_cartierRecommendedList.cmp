@@ -1,0 +1,35 @@
+<aura:component controller="AB_cartierRecommendedCtrl" implements="flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+    <aura:attribute name="clickedContact" type="String"/>
+    <aura:attribute name="recProds" type="Recommended_Product__c[]"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInitRec}"/>
+    
+    <div class="productContainer">
+        
+        <div class="slds-text-heading_medium listTitle">Recommended Products</div>
+        
+        <lightning:layout multipleRows="true">
+            <aura:iteration items="{!v.recProds}" var="rec">
+                <lightning:layoutItem size="6" padding="around-small">
+                    <div class="custom-box">
+                        <div class="prodImageBox">
+                            <aura:if isTrue="{!empty(rec.Product__r.Image__c)}">
+                                <img src="{!$Resource.genericCart}" class="image"/>
+                                <aura:set attribute="else">
+                                     <img class="slds-align--absolute-center image" src="{!$SfdcSite.pathPrefix + '/servlet/servlet.FileDownload?file=' + rec.Product__r.Image__c}"/>
+                                </aura:set>   
+                            </aura:if>
+                           
+                            
+                        </div>
+                        <div class="slds-text-heading_small prodName">{!rec.Product__r.Name}</div>
+                        <p class="slds-text-heading--small priceName">
+                            <ui:outputCurrency value="{!rec.MSRP__c}"/>
+                        </p> 
+                    </div>
+                </lightning:layoutItem>
+            </aura:iteration>
+        </lightning:layout>
+        
+        
+    </div>
+</aura:component>

@@ -1,0 +1,50 @@
+.THIS .titleActivity{
+    font-size: 2.4rem;
+    margin-left: 0.5rem;
+}
+
+.THIS .cusPad{
+    padding-top:2rem;
+    margin-left: 1rem;
+}
+
+.THIS input[type=checkbox]{
+    width: 3rem;
+    height: 3rem;
+}
+
+.THIS .slds-text-body_regular {
+    font-size: 1.5rem;
+}
+
+.THIS .uiOutputDate{
+    font-size:1rem;
+}
+
+
+.THIS h3.slds-truncate{
+    font-size:1.7rem!important;
+}
+
+.THIS .slds-m-horizontal_xx-small{
+    font-size: 1.3rem;
+}
+
+.THIS .slds-timeline__date {
+    font-size: 1.1rem;
+}
+
+.THIS .slds-timeline__item_expandable.slds-media__body {
+    padding: 1rem .25rem;
+}
+
+.THIS li{
+    margin-bottom:2rem;
+}
+
+.THIS a{
+    color: rgb(22, 50, 92);
+}
+.THIS .slds-timeline__item_expandable:before{
+    left: 3rem !important;
+}

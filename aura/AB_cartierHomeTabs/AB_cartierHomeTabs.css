@@ -1,0 +1,59 @@
+.THIS .tab{
+    text-align: center;
+    font-size: 2em;
+    line-height: 40px;
+    padding-bottom: 0.5em;
+    text-transform: uppercase;
+    border-bottom: 2.5px solid rgb(221, 219, 218);
+}
+.THIS .tab.active{
+    border-bottom: 2.5px solid #337ab7;
+}
+
+.THIS .uiOutputText{
+    font-size:2rem;
+}
+
+.THIS .cuf-subPreamble .slds-text-body--small{
+    font-size:1.5rem;
+}
+
+.THIS .slds-post__footer{
+    font-size:1.2rem;
+}
+
+.THIS .inputTextArea.listSearch.input{
+    font-size:2rem; 
+}
+
+.THIS .inputTextArea.listSearch.input::placeholder{
+    font-size:2rem; 
+}
+
+.THIS .slds-text-color--weak {
+    color: rgb(107, 109, 112);
+    font-size: 1.5rem;
+}
+
+.THIS .forceChatterFeedInner.slds-card-wrapper {
+    margin-top: 1.5rem;
+}
+
+
+.THIS.sf1Fix .tab {
+    font-size: 0.875em;
+    line-height: 20px;
+    border-bottom: 1.2px solid rgb(221, 219, 218);
+}
+
+.THIS.sf1Fix .active.tab {
+    border-bottom: 1.2px solid #337ab7;
+}
+
+.THIS.sf1Fix .uiOutputText{
+    font-size:1rem!important;
+}
+
+.THIS.sf1Fix .slds-text-color--weak {
+    font-size: 0.7rem;
+}

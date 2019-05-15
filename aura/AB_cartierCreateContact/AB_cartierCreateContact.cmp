@@ -1,0 +1,131 @@
+<aura:component controller="AB_carterStoreVisitCtrl" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    
+    <div class="CreateContactContainer">
+        <div id="contactPanel">
+            
+            <lightning:layout>
+                <lightning:layoutItem size="3" padding="around-small">
+                    <lightning:button label="Cancel" class="conBtts" onclick="{!c.cancelEdit}"/>
+                </lightning:layoutItem>
+                <lightning:layoutItem size="6" padding="around-small">
+                    <div class="slds-text-heading_medium" style="text-align: center; font-size: 2.5rem;">Create Contact</div>
+                </lightning:layoutItem>
+                <lightning:layoutItem size="3" padding="around-small">
+                    <lightning:button variant="brand" class="conBttsTwo" label="Save" onclick="{!c.createContact}" />
+                </lightning:layoutItem>
+            </lightning:layout>
+            
+            
+        </div>
+        
+        <div class="contactContainerInner">
+            
+            <div aura:id="contactEditTwo">
+                
+                
+                <div class="slds-form slds-form_stacked forcePageBlockItemView" style="padding: 2rem;" role="list">
+                    
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="fNameC">First Name</label>
+                        <div class="slds-form-element__control">
+                            <input type="text" id="fNameC" value="" class="slds-input" />
+                        </div>
+                    </div>
+                    
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="form-element-01">Last Name</label>
+                        <div class="slds-form-element__control">
+                            <input type="text" id="lNameC" value="" class="slds-input" />
+                        </div>
+                    </div>
+                    
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="selectGender">Gender</label>
+                        <div class="slds-form-element__control">
+                            <div class="slds-select_container">
+                                <select class="slds-select" id="selectGender">
+                                    <option value="">Select</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="slds-form-element">
+                        <span class="slds-form-element__label">Collections</span>
+                        <div class="slds-form-element__control">
+                            <input type="text" id="collections" value="" class="slds-input" />
+                            
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="selectMarital">Marital Status</label>
+                        <div class="slds-form-element__control">
+                            <div class="slds-select_container">
+                                <select class="slds-select" id="selectMarital">
+                                    <option value="">Select</option>
+                                    <option value="Single">Single</option>
+                                    <option value="Married">Married</option>
+                                    <option value="Divorced">Divorced</option>
+                                    <option value="Widowed">Widowed</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="slds-form-element">
+                        <span class="slds-form-element__label">Email</span>
+                        <div class="slds-form-element__control">
+                            <input type="text" id="email" value="" class="slds-input" />
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="slds-form-element">
+                        <span class="slds-form-element__label">Mobile</span>
+                        <div class="slds-form-element__control">
+                            <input type="number" id="mobilePhone" value="" class="slds-input" />
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="slds-form-element" style="margin-bottom:100px;">
+                        <span class="slds-form-element__label">Birthday</span>
+                        <ui:inputDate aura:id="birthDate" class="fieldBirth" value="" displayDatePicker="true" /> 
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            
+        </div>
+        
+        <div class="successPopThree" aura:id="modalBoxThree">
+            <div class="slds-notify_container slds-is-relative">
+                <div class="slds-notify slds-notify_toast slds-theme_success" role="status">
+                    <span class="slds-assistive-text">success</span>
+                    <span class="slds-icon_container slds-icon-utility-success slds-m-right_small slds-no-flex slds-align-top" title="Description of icon when needed">
+                       <lightning:icon iconName="utility:success" size="small" alternativeText="Utility success" />
+                    </span>
+                    <div class="slds-notify__content">
+                        <h2 class="slds-text-heading_small">New Contact has been created.</h2>
+                    </div>
+                    <div class="slds-notify__close">
+                        <button class="slds-button slds-button_icon slds-button_icon-inverse" title="Close">
+                            <lightning:icon iconName="utility:close" size="small" alternativeText="Utility close" />
+                            <span class="slds-assistive-text">Close</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</aura:component>

@@ -1,0 +1,16 @@
+.THIS .slds-grid{
+    text-align:center!important;
+}
+
+.THIS .slds-icon_container_circle{
+    padding:1rem!important;
+    background-color: #bebebe!important;
+} 
+
+.THIS .slds-icon_container_circle:hover{
+    background-color: #a30101!important;
+}
+
+.THIS.sf1Fix .slds-icon_container_circle{
+    padding:0.7rem!important;
+}
