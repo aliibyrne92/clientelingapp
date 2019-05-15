@@ -41,13 +41,6 @@
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>Product_Compact</compactLayoutAssignment>
-    <compactLayouts>
-        <fullName>Product_Compact</fullName>
-        <fields>Customer__c</fields>
-        <fields>Product__c</fields>
-        <label>Product Compact</label>
-    </compactLayouts>
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
@@ -111,7 +104,7 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
-     <fields>
+    <fields>
         <fullName>Product__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -123,36 +116,6 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Rejected_By_User__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>User</label>
-        <referenceTo>User</referenceTo>
-        <relationshipName>Recommended_Productsab</relationshipName>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Rejected_Date__c</fullName>
-        <externalId>false</externalId>
-        <label>Rejected Date</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>DateTime</type>
-    </fields>
-    <fields>
-        <fullName>Rejected__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Rejected</label>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
     </fields>
     <label>Recommended Product</label>
     <listViews>

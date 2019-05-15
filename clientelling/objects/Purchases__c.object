@@ -41,17 +41,6 @@
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>Item_Interest</compactLayoutAssignment>
-    <compactLayouts>
-        <fullName>Item_Interest</fullName>
-        <fields>Customer__c</fields>
-        <fields>Quantity__c</fields>
-        <fields>Size__c</fields>
-        <fields>Color__c</fields>
-        <fields>Purchased__c</fields>
-        <fields>Source__c</fields>
-        <label>Item Interest</label>
-    </compactLayouts>
     <deploymentStatus>Deployed</deploymentStatus>
     <description>Retail IDO Custom Object</description>
     <enableActivities>false</enableActivities>
@@ -153,16 +142,6 @@
         <formula>IMAGE( Product__r.Image_URL__c  , &quot;No Image&quot;, 180, 120)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Image</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Lot_number__c</fullName>
-        <externalId>false</externalId>
-        <label>Lot number</label>
-        <length>50</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -323,19 +302,6 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields>
-    <fields>
-        <fullName>Store__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <description>Retail IDO Custom Field</description>
-        <externalId>false</externalId>
-        <label>Store</label>
-        <referenceTo>Account</referenceTo>
-        <relationshipLabel>Purchases</relationshipLabel>
-        <relationshipName>Purchasesab</relationshipName>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>UCIN_External_ID__c</fullName>
