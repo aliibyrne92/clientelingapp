@@ -188,11 +188,6 @@
         
         
         <div aura:id="iconBody">
-            <div aura:id="smsBody" class="slds-hide">
-                <c:AB_cartierSMS />
-                
-                
-            </div>
             
             <div aura:id="emailBody" class="slds-hide">
                 <c:AB_cartierEmail />

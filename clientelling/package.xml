@@ -2,7 +2,6 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>clientelingApp</fullName>
     <types>
-        <members>AB_SMScontroller</members>
         <members>AB_boutiqueController</members>
         <members>AB_carterStoreVisitCtrl</members>
         <members>AB_cartierAssignmentsCtrl</members>
@@ -35,7 +34,6 @@
         <members>AB_cartierRecommendedList</members>
         <members>AB_cartierRecordCall</members>
         <members>AB_cartierRelatedList</members>
-        <members>AB_cartierSMS</members>
         <members>AB_cartierShowCatalog</members>
         <members>AB_cartierShowContact</members>
         <members>AB_cartierStoreVisit</members>
@@ -76,8 +74,6 @@
         <members>Product2.purl__c</members>
         <members>Purchase_Item__c.Amount__c</members>
         <members>Purchase_Item__c.Image__c</members>
-        <members>Purchase_Item__c.Log_Case__c</members>
-        <members>Purchase_Item__c.Product_Recall__c</members>
         <members>Purchase_Item__c.Product__c</members>
         <members>Purchase_Item__c.Purchase_History__c</members>
         <members>Purchase_Item__c.Quantity__c</members>

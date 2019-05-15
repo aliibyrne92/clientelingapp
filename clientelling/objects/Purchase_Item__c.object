@@ -78,29 +78,6 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Log_Case__c</fullName>
-        <description>Retail IDO Custom Field</description>
-        <externalId>false</externalId>
-        <formula>If(  Recall__c ,  HYPERLINK(&quot;javascript:srcUp(&apos;/apex/Q_CreatePurchaseHistoryCase?isdtp=vw&amp;purchaseId=&quot; + Id + &quot;&apos;)&quot;, &quot;Log Case&quot;), &quot;&quot;)</formula>
-        <label>Log Recall Case</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Product_Recall__c</fullName>
-        <description>Retail IDO Custom Field</description>
-        <externalId>false</externalId>
-        <formula>If( Recall__c , Image(&quot;/servlet/servlet.FileDownload?file=0150b000002e8gW&quot;, &quot;Product Recalled&quot;, 32,32), &quot;&quot;)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Product Recall</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Product__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <description>Retail IDO Custom Field</description>
