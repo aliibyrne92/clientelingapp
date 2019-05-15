@@ -67,8 +67,6 @@
         <members>Activity.Contact_Pic_URL__c</members>
         <members>Activity.Type__c</members>
         <members>Appointment__c.Appointment_Time__c</members>
-        <members>Appointment__c.Boutique__c</members>
-        <members>Appointment__c.Cartier_Boutique__c</members>
         <members>Appointment__c.Contact__c</members>
         <members>Appointment__c.Reason__c</members>
         <members>Appointment__c.Status__c</members>
@@ -87,7 +85,6 @@
         <members>Contact.Gender__c</members>
         <members>Contact.Marital_Status__c</members>
         <members>Contact.Occupation__c</members>
-        <members>Contact.Preffere__c</members>
         <members>Contact.Status__c</members>
         <members>Item__c.Color__c</members>
         <members>Item__c.Description__c</members>
@@ -98,7 +95,6 @@
         <members>Item__c.Recommendation__c</members>
         <members>Item__c.SKU__c</members>
         <members>Item__c.purl__c</members>
-        <members>OpportunityLineItem.Shipment__c</members>
         <members>Outbound_SMS__c.Contact__c</members>
         <members>Outbound_SMS__c.Phone__c</members>
         <members>Outbound_SMS__c.SMS_Body__c</members>
@@ -132,7 +128,6 @@
         <members>Purchases__c.Purchased__c</members>
         <members>Purchases__c.Quantity__c</members>
         <members>Purchases__c.Ship_Status__c</members>
-        <members>Purchases__c.Shipment__c</members>
         <members>Purchases__c.Size__c</members>
         <members>Purchases__c.Source__c</members>
         <members>Purchases__c.Store__c</members>
@@ -154,7 +149,6 @@
         <members>Recommended_Product__c.Contact__c</members>
         <members>Recommended_Product__c.Customer__c</members>
         <members>Recommended_Product__c.Image__c</members>
-        <members>Recommended_Product__c.Item__c</members>
         <members>Recommended_Product__c.Product__c</members>
         <members>Recommended_Product__c.Rejected_By_User__c</members>
         <members>Recommended_Product__c.Rejected_Date__c</members>
@@ -195,28 +189,6 @@
         <name>FlexiPage</name>
     </types>
     <types>
-        <members>Appointment__c-Appointment Layout</members>
-        <members>Clienteling_App_Configuration__c-Clienteling App Configuration Layout</members>
-        <members>Outbound_SMS__c-Outbound SMS Layout</members>
-        <members>Purchase_Item__c-Purchase Item Layout</members>
-        <members>Purchases__c-Purchase History Layout</members>       
- <members>Recommended_Product__c-Recommended Product Layout</members>
-        <name>Layout</name>
-    </types>
-    <types>
-        <members>Appointment__c.All</members>
-        <members>Boutique__c.All</members>
-        <members>Clienteling_App_Configuration__c.All</members>
-        <members>Item__c.All</members>
-        <members>Outbound_SMS__c.All</members>
-        <members>Purchase_Item__c.All</members>
-        <members>Purchases__c.All</members>
-        <members>RMA__c.All</members>
-        <members>Recommended_Product__c.All</members>
-        <members>Shipment__c.All</members>
-        <name>ListView</name>
-    </types>
-    <types>
         <name>QuickAction</name>
     </types>
     <types>
@@ -232,7 +204,6 @@
     </types>
     <types>
         <members>Purchase_Item__c.Log_Case</members>
-        <members>Purchases__c.DF_Reset</members>
         <name>WebLink</name>
     </types>
     <version>45.0</version>

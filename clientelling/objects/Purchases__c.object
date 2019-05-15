@@ -262,19 +262,6 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>Shipment__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <description>Retail IDO Custom Field</description>
-        <externalId>false</externalId>
-        <label>Shipment</label>
-        <referenceTo>Shipment__c</referenceTo>
-        <relationshipLabel>Purchases</relationshipLabel>
-        <relationshipName>Purchasesab</relationshipName>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
         <fullName>Size__c</fullName>
         <description>Retail IDO Custom Field</description>
         <externalId>false</externalId>
@@ -406,16 +393,4 @@
     <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
-    <webLinks>
-        <fullName>DF_Reset</fullName>
-        <availability>online</availability>
-        <description>Retail IDO Custom Button or Link</description>
-        <displayType>button</displayType>
-        <height>600</height>
-        <linkType>page</linkType>
-        <masterLabel>DF Reset</masterLabel>
-        <openType>noSidebar</openType>
-        <page>Q_DFPurchaseReset</page>
-        <protected>false</protected>
-    </webLinks>
 </CustomObject>
