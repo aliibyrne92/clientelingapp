@@ -139,9 +139,5 @@
         <members>weChat</members>
         <name>StaticResource</name>
     </types>
-    <types>
-        <members>Purchase_Item__c.Log_Case</members>
-        <name>WebLink</name>
-    </types>
     <version>45.0</version>
 </Package>
