@@ -112,6 +112,11 @@
         <name>CustomObject</name>
     </types>
     <types>
+        <members>Appointment__c</members>
+        <members>Clienteling_App_Configuration__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
         <members>Appointment__c.All</members>
         <members>Clienteling_App_Configuration__c.All</members>
         <members>Purchase_Item__c.All</members>
