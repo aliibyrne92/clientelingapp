@@ -196,20 +196,4 @@
     <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
-    <webLinks>
-        <fullName>Log_Case</fullName>
-        <availability>online</availability>
-        <description>Retail IDO Custom Button or Link</description>
-        <displayType>massActionButton</displayType>
-        <linkType>javascript</linkType>
-        <masterLabel>Log Case</masterLabel>
-        <openType>onClickJavaScript</openType>
-        <protected>false</protected>
-        <requireRowSelection>true</requireRowSelection>
-        <url>if (typeof(srcUp) == &apos;function&apos;) {
-srcUp(&apos;&apos;);}
-else {    
-    window.open(&apos;&apos;);
-}</url>
-    </webLinks>
 </CustomObject>
