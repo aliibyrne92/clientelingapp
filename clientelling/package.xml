@@ -117,6 +117,10 @@
         <name>CustomTab</name>
     </types>
     <types>
+        <members>Task_Contact_Picture</members>
+        <name>Flow</name>
+    </types>
+    <types>
         <members>Appointment__c.All</members>
         <members>Clienteling_App_Configuration__c.All</members>
         <members>Purchase_Item__c.All</members>
