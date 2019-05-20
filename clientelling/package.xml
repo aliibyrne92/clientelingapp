@@ -120,6 +120,10 @@
         <name>ListView</name>
     </types>
     <types>
+        <members>Clienteling_User</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
         <members>alpineLogo2</members>
         <members>avatarGeneric</members>
         <members>genericCart</members>
