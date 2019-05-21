@@ -121,6 +121,10 @@
         <name>CustomTab</name>
     </types>
     <types>
+        <members>Clienteling_UtilityBar</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
         <members>Task_Contact_Picture</members>
         <name>Flow</name>
     </types>
