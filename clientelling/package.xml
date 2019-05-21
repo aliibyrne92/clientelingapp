@@ -49,6 +49,10 @@
         <name>AuraDefinitionBundle</name>
     </types>
     <types>
+        <members>Clienteling</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
         <members>Activity.Contact_Pic_URL__c</members>
         <members>Activity.Type__c</members>
         <members>Appointment__c.Appointment_Time__c</members>
@@ -121,11 +125,20 @@
         <name>Flow</name>
     </types>
     <types>
+        <members>Clienteling_App_Configuration__c-Clienteling App Configuration Layout</members>
+        <members>Clienteling_App_Configuration__c-Clienteling Custom Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
         <members>Appointment__c.All</members>
         <members>Clienteling_App_Configuration__c.All</members>
         <members>Purchase_Item__c.All</members>
         <members>Purchases__c.All</members>
         <members>Recommended_Product__c.All</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>Clienteling_App_Configuration__c.All</members>
         <name>ListView</name>
     </types>
     <types>
