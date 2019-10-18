@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata"><!--
     <fieldPermissions>
         <editable>true</editable>
         <field>Appointment__c.Contact__c</field>
@@ -426,5 +426,5 @@
     <tabSettings>
         <tab>Clienteling_App_Configuration__c</tab>
         <visibility>Visible</visibility>
-    </tabSettings>
+    </tabSettings> -->
 </PermissionSet>
