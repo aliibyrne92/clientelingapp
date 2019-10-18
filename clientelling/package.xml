@@ -145,10 +145,11 @@
         <members>Clienteling_App_Configuration__c.All</members>
         <name>ListView</name>
     </types>
+    <!--
     <types>
         <members>Clienteling_User</members>
         <name>PermissionSet</name>
-    </types>
+    </types> -->
     <types>
         <members>alpineLogo2</members>
         <members>avatarGeneric</members>
