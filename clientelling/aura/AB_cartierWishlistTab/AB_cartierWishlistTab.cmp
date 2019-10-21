@@ -1,60 +1,22 @@
 <aura:component controller="AB_cartierWishListCtrl" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >=
-    
-    <aura:attribute name="products" type="Product2[]"/>
-    <aura:handler name="init" value="{!this}" action="{!c.doInitProd}"/>
+    <aura:attribute name="clickedContact" type="String"/>
+    <aura:attribute name="wProds" type="Product2[]"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInitWish}"/>
     
     
     <div class="productContainer">
-        <!--
-        <div class="filterBttnContainer">
-            <lightning:button onclick="{!c.openFilters}" class="filterBttn" label="Filter By:"/>
-        </div>
-        
-         <div class="filterOpen">
-            
-            <lightning:accordion aura:id="accordion" activeSectionName="B">
-                <lightning:accordionSection name="Collection" label="Collection">
-                    <lightning:select aura:id="filterCollection" onchange="{!c.filterChange}">
-                        <option value="">Collection</option>
-                        <option value="Panthere">Panthere</option>
-                        <option value="Santos de Cartier">Santos de Cartier</option>
-                        <option value="Love">Love</option>
-                    </lightning:select>
-                </lightning:accordionSection>
-                
-                <lightning:accordionSection name="Type" label="Type">
-                    
-                    <lightning:select aura:id="filterType" onchange="{!c.filterChange}">
-                        <option value="">Type</option>
-                        <option value="Watches">Watches</option>
-                        <option value="Jewelry">Jewelry</option>
-                        <option value="Leather Goods">Leather Goods</option>
-                    </lightning:select>
-                    
-                </lightning:accordionSection>
-                
-                <lightning:accordionSection name="Gender" label="Gender">
-                    
-                    <lightning:select aura:id="filterGender" onchange="{!c.filterChange}">
-                        <option value="">Gender</option>
-                        <option value="Female">Female</option>
-                        <option value="Male">Male</option>
-                    </lightning:select>
-                </lightning:accordionSection>
-            </lightning:accordion>
-        </div> -->
         
         <div class="slds-text-heading_medium listTitle">Wishlist</div>
         
         <lightning:layout multipleRows="true">
-            <aura:iteration items="{!v.products}" var="pro">
+            <aura:iteration items="{!v.wProds}" var="pro"> 
                 <lightning:layoutItem size="6" padding="around-small">
                     <div class="custom-box">
                         <div class="prodImageBox">
-                            <img class="slds-align--absolute-center image" src="{!$SfdcSite.pathPrefix + '/servlet/servlet.FileDownload?file=' + pro.Image__c}"/>
+                            <img class="slds-align--absolute-center image" src="{!$SfdcSite.pathPrefix + '/servlet/servlet.FileDownload?file=' + pro.Product__r.Image__c}"/>
                             
                         </div>
-                        <div class="slds-text-heading_small prodName">{!pro.Name}</div>
+                        <div class="slds-text-heading_small prodName">{!pro.Product__r.Name}</div>
                         <p class="slds-text-heading--small priceName">
                             <ui:outputCurrency value="{!pro.MSRP__c}"/>
                         </p>
