@@ -1,4 +1,4 @@
-public class AB_cartierWishListCtrl {
+/*public class AB_cartierWishListCtrl {
     @AuraEnabled
     public static List<Wish_List__c> wishList(String clickedContact){
         System.debug('the Customer is : '+clickedContact);
@@ -9,4 +9,4 @@ public class AB_cartierWishListCtrl {
         
     }
     
-}
+}*/
