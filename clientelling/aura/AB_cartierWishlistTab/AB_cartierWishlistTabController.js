@@ -1,29 +1,39 @@
 ({
-    doInitProd : function(component, event, helper) {
-        console.log('doinit loaded');
-        helper.getTheProducts(component, '','','', true);
-    },
+    doInitWish : function(component, event, helper) {
+        
+        var action = component.get("c.wishList");
+        console.log('got method');
+        action.setParams({
+
+            "clickedContact": component.get("v.clickedContact")
+
+        });
+        
+        
+        action.setCallback(this, function(response) {
+            var state = response.getState();
+            if (state === "SUCCESS") {
+                
+                console.log("From server: ", response.getReturnValue());
+                component.set('v.wProds', response.getReturnValue());
+            }
+            else if (state === "INCOMPLETE") {
+                // do something
+            }
+                else if (state === "ERROR") {
+                    var errors = response.getError();
+                    if (errors) {
+                        if (errors[0] && errors[0].message) {
+                            console.log("Error message: " + 
+                                        errors[0].message);
+                        }
+                    } else {
+                        console.log("Unknown error");
+                    }
+                }
+        });
+        $A.enqueueAction(action);
     
-    filterChange : function(component, event, helper) {
-        console.log('selected filter change');
         
-        var collectionFilter = component.find('filterCollection').get('v.value');
-        console.log(collectionFilter);
-        
-        
-        var typeFilter = component.find('filterType').get('v.value');
-        console.log(typeFilter);
-        
-        var genderFilter = component.find('filterGender').get('v.value');
-        console.log(genderFilter);
-        
-        
-        helper.getTheProducts(component, collectionFilter, typeFilter, genderFilter, false);
     },
-    
-    openFilters  : function(component, event, helper) {
-        console.log('toggle div');
-        $(".filterOpen").toggle();
-        
-    }
 })

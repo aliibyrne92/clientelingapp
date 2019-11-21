@@ -88,18 +88,6 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>Customer_Name__c</fullName>
-        <description>Retail IDO Custom Field</description>
-        <externalId>false</externalId>
-        <formula>HYPERLINK( &quot;/&quot;+ Customer__r.Id,  Customer__r.Customer_Name__c )</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Customer Name</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Customer__c</fullName>
         <description>Retail IDO Custom Field</description>
         <externalId>false</externalId>
@@ -201,45 +189,7 @@
         <type>Number</type>
         <unique>false</unique>
     </fields>
-    <fields>
-        <fullName>Ship_Status__c</fullName>
-        <description>Retail IDO Custom Field</description>
-        <externalId>false</externalId>
-        <label>Ship Status</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>N/A</fullName>
-                    <default>false</default>
-                    <label>N/A</label>
-                </value>
-                <value>
-                    <fullName>Received</fullName>
-                    <default>false</default>
-                    <label>Received</label>
-                </value>
-                <value>
-                    <fullName>In Transit</fullName>
-                    <default>false</default>
-                    <label>In Transit</label>
-                </value>
-                <value>
-                    <fullName>Delivered</fullName>
-                    <default>false</default>
-                    <label>Delivered</label>
-                </value>
-                <value>
-                    <fullName>Exception</fullName>
-                    <default>false</default>
-                    <label>Exception</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
+    
     <fields>
         <fullName>Size__c</fullName>
         <description>Retail IDO Custom Field</description>
@@ -270,76 +220,6 @@
                     <fullName>XL</fullName>
                     <default>false</default>
                     <label>XL</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Source__c</fullName>
-        <description>Retail IDO Custom Field</description>
-        <externalId>false</externalId>
-        <label>Source</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Website</fullName>
-                    <default>false</default>
-                    <label>Website</label>
-                </value>
-                <value>
-                    <fullName>Mobile App</fullName>
-                    <default>false</default>
-                    <label>Mobile App</label>
-                </value>
-                <value>
-                    <fullName>Store</fullName>
-                    <default>false</default>
-                    <label>Store</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>UCIN_External_ID__c</fullName>
-        <caseSensitive>true</caseSensitive>
-        <description>Cloud Explorer External ID field used to track IDs between systems.</description>
-        <externalId>true</externalId>
-        <label>UCIN External ID</label>
-        <length>18</length>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>true</unique>
-    </fields>
-    <fields>
-        <fullName>Warranty__c</fullName>
-        <externalId>false</externalId>
-        <label>Warranty</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Active</fullName>
-                    <default>false</default>
-                    <label>Active</label>
-                </value>
-                <value>
-                    <fullName>Inactive</fullName>
-                    <default>false</default>
-                    <label>Inactive</label>
-                </value>
-                <value>
-                    <fullName>About to Expire</fullName>
-                    <default>false</default>
-                    <label>About to Expire</label>
                 </value>
             </valueSetDefinition>
         </valueSet>

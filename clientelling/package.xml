@@ -82,9 +82,7 @@
         <members>Purchase_Item__c.Quantity__c</members>
         <members>Purchase_Item__c.Status__c</members>
         <members>Purchase_Item__c.Total_Amount__c</members>
-        <members>Purchase_Item__c.UCIN_External_ID__c</members>
         <members>Purchases__c.Color__c</members>
-       <members>Purchases__c.Customer_Name__c</members>
         <members>Purchases__c.Customer__c</members>
         <members>Purchases__c.From__c</members>
         <members>Purchases__c.Image_Small__c</members>
@@ -94,16 +92,23 @@
         <members>Purchases__c.Purchase_Date__c</members>
         <members>Purchases__c.Purchased__c</members>
         <members>Purchases__c.Quantity__c</members>
-        <members>Purchases__c.Ship_Status__c</members>
         <members>Purchases__c.Size__c</members>
-        <members>Purchases__c.Source__c</members>
-        <members>Purchases__c.UCIN_External_ID__c</members>
-        <members>Purchases__c.Warranty__c</members>
         <members>Recommended_Product__c.Account__c</members>
         <members>Recommended_Product__c.Contact__c</members>
         <members>Recommended_Product__c.Customer__c</members>
         <members>Recommended_Product__c.Image__c</members>
         <members>Recommended_Product__c.Product__c</members>
+        <members>Wish_List__c.Amount__c</members>
+        <members>Wish_List__c.Color__c</members>
+        <members>Wish_List__c.Customer__c</members>
+        <members>Wish_List__c.Delete__c</members>
+        <members>Wish_List__c.Image__c</members>
+        <members>Wish_List__c.Item__c</members>
+        <members>Wish_List__c.Product__c</members>
+        <members>Wish_List__c.Quantity__c</members>
+        <members>Wish_List__c.Size__c</members>
+        <members>Wish_List__c.Source__c</members>
+        <members>Wish_List__c.Wishlist_Date__c</members>
         <name>CustomField</name>
     </types>
     <types>
@@ -112,6 +117,7 @@
         <members>Purchase_Item__c</members>
         <members>Purchases__c</members>
         <members>Recommended_Product__c</members>
+        <members>Wish_List__c</members>
         <name>CustomObject</name>
     </types>
     <types>
@@ -138,6 +144,7 @@
         <members>Purchase_Item__c.All</members>
         <members>Purchases__c.All</members>
         <members>Recommended_Product__c.All</members>
+        <members>Wish_List__c.All</members>
         <name>ListView</name>
     </types>
     <types>
