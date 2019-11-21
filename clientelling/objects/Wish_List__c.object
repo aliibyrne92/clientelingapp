@@ -291,35 +291,6 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>Source__c</fullName>
-        <externalId>false</externalId>
-        <label>Source</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Website</fullName>
-                    <default>false</default>
-                    <label>Website</label>
-                </value>
-                <value>
-                    <fullName>Mobile App</fullName>
-                    <default>false</default>
-                    <label>Mobile App</label>
-                </value>
-                <value>
-                    <fullName>Store</fullName>
-                    <default>false</default>
-                    <label>Store</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>Wishlist_Date__c</fullName>
         <externalId>false</externalId>
         <label>Wishlist Date</label>

@@ -107,7 +107,6 @@
         <members>Wish_List__c.Product__c</members>
         <members>Wish_List__c.Quantity__c</members>
         <members>Wish_List__c.Size__c</members>
-        <members>Wish_List__c.Source__c</members>
         <members>Wish_List__c.Wishlist_Date__c</members>
         <name>CustomField</name>
     </types>
