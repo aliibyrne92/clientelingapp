@@ -141,16 +141,7 @@
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>Wish_List_Layout</compactLayoutAssignment>
-    <compactLayouts>
-        <fullName>Wish_List_Layout</fullName>
-        <fields>Customer__c</fields>
-        <fields>Product__c</fields>
-        <fields>Amount__c</fields>
-        <fields>Wishlist_Date__c</fields>
-        <label>Wish List Layout</label>
-    </compactLayouts>
-    <deploymentStatus>Deployed</deploymentStatus>
+   <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
@@ -240,21 +231,7 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Item__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>Item</label>
-        <referenceTo>Item__c</referenceTo>
-        <relationshipLabel>Wish Lists</relationshipLabel>
-        <relationshipName>Wish_Lists</relationshipName>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
+    </fields><fields>
         <fullName>Product__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
