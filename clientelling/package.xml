@@ -10,7 +10,7 @@
         <members>AB_cartierHistoryListCtrl</members>
         <members>AB_cartierRecommendedCtrl</members>
         <members>AB_cartierUserController</members>
-        <members>AB_cartierWishListCtrl</members>
+       <!-- <members>AB_cartierWishListCtrl</members> -->
         <members>AB_configurationCtrl</members>
         <members>ActivityHistoryCtrl</members>
         <name>ApexClass</name>
@@ -42,7 +42,7 @@
         <members>AB_cartierUtility</members>
         <members>AB_cartierVisualStudio</members>
         <members>AB_cartierWeChat</members>
-        <members>AB_cartierWishlistTab</members>
+       <!-- <members>AB_cartierWishlistTab</members> -->
         <members>AB_clientelingApp</members>
         <members>AB_eventList</members>
         <members>NavToCalendar</members>
@@ -64,9 +64,8 @@
         <members>Clienteling_App_Configuration__c.Logo_Resource_Name__c</members>
         <members>Clienteling_App_Configuration__c.Logo_Width__c</members>
         <members>Clienteling_App_Configuration__c.Performance_Dashboard_Id__c</members>
-        <members>Contact.Collections__c</members>
         <members>Contact.Cust360_Contact_Picture_URL__c</members>
-        <members>Contact.Customer_Name__c</members>
+       <!-- <members>Contact.Customer_Name__c</members> -->
         <members>Contact.Gender__c</members>
         <members>Contact.Marital_Status__c</members>
         <members>Contact.Occupation__c</members>
@@ -85,7 +84,7 @@
         <members>Purchase_Item__c.Total_Amount__c</members>
         <members>Purchase_Item__c.UCIN_External_ID__c</members>
         <members>Purchases__c.Color__c</members>
-        <members>Purchases__c.Customer_Name__c</members>
+       <!-- <members>Purchases__c.Customer_Name__c</members> -->
         <members>Purchases__c.Customer__c</members>
         <members>Purchases__c.From__c</members>
         <members>Purchases__c.Image_Small__c</members>
