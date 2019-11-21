@@ -189,7 +189,6 @@
         <type>Number</type>
         <unique>false</unique>
     </fields>
-    
     <fields>
         <fullName>Size__c</fullName>
         <description>Retail IDO Custom Field</description>
