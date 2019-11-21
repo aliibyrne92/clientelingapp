@@ -87,6 +87,7 @@
             </valueSetDefinition>
         </valueSet>
     </fields>
+    <!--
     <fields>
         <fullName>Customer_Name__c</fullName>
         <description>Retail IDO Custom Field</description>
@@ -99,6 +100,7 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+-->
     <fields>
         <fullName>Customer__c</fullName>
         <description>Retail IDO Custom Field</description>

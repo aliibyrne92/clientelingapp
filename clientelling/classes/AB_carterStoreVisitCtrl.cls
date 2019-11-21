@@ -15,7 +15,7 @@ public class AB_carterStoreVisitCtrl {
     }
     
     @auraEnabled
-    public static Contact createCon(String fNameC, String lNameC, String selectGender, String collections, String selectMarital, 
+    public static Contact createCon(String fNameC, String lNameC, String selectGender, String selectMarital, 
                                     String email, String mobilePhone, Date birthDate){
                                         
                                         Contact c = new Contact();
@@ -23,7 +23,6 @@ public class AB_carterStoreVisitCtrl {
                                         c.FirstName = fnameC;
                                         c.LastName = lNameC;
                                         c.Gender__c = selectGender;
-                                        c.Collections__c = collections;
                                         c.Marital_Status__c = selectMarital;
                                         c.Email = email;
                                         c.Phone = mobilePhone;
