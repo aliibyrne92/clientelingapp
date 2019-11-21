@@ -91,8 +91,8 @@
         </div>
         
         <div aura:id="wishListBody" class="slds-hide">
-            <!--
-            <c:AB_cartierWishlistTab clickedContact="{!v.clickedContact}"/>                 -->
+            
+            <c:AB_cartierWishlistTab clickedContact="{!v.clickedContact}"/>                 
         </div>
         
         <div aura:id="activityBody" class="slds-hide">
