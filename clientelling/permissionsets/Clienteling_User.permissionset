@@ -174,7 +174,7 @@
         <editable>false</editable>
         <field>Product2.purl__c</field>
         <readable>true</readable>
-    </fieldPermissions>
+    </fieldPermissions><!--
     <fieldPermissions>
         <editable>true</editable>
         <field>Purchase_Item__c.Amount__c</field>
@@ -204,7 +204,7 @@
         <editable>false</editable>
         <field>Purchase_Item__c.Total_Amount__c</field>
         <readable>false</readable>
-    </fieldPermissions>
+    </fieldPermissions>-->
     <fieldPermissions>
         <editable>true</editable>
         <field>Purchases__c.Color__c</field>
@@ -402,7 +402,7 @@
         <modifyAllRecords>false</modifyAllRecords>
         <object>Product2</object>
         <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
+    </objectPermissions><!--
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
@@ -411,7 +411,7 @@
         <modifyAllRecords>true</modifyAllRecords>
         <object>Purchase_Item__c</object>
         <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
+    </objectPermissions>-->
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
@@ -429,7 +429,7 @@
         <modifyAllRecords>false</modifyAllRecords>
         <object>Recommended_Product__c</object>
         <viewAllRecords>false</viewAllRecords>
-    </objectPermissions>
+    </objectPermissions><!--
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
@@ -438,7 +438,7 @@
         <modifyAllRecords>true</modifyAllRecords>
         <object>Wish_List__c</object>
         <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
+    </objectPermissions>-->
     <tabSettings>
         <tab>Appointment__c</tab>
         <visibility>Visible</visibility>
