@@ -89,7 +89,7 @@
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields>
+    </fields><!--
     <fields>
         <fullName>Purchase_History__c</fullName>
         <description>Retail IDO Custom Field</description>
@@ -103,7 +103,7 @@
         <trackTrending>false</trackTrending>
         <type>MasterDetail</type>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
-    </fields>
+    </fields>-->
     <fields>
         <fullName>Quantity__c</fullName>
         <defaultValue>1</defaultValue>
