@@ -41,6 +41,7 @@
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
     <description>Retail IDO Custom Object</description>
     <enableActivities>false</enableActivities>
@@ -54,80 +55,21 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <fields>
-        <fullName>Color__c</fullName>
+        <fullName>Amount__c</fullName>
         <description>Retail IDO Custom Field</description>
         <externalId>false</externalId>
-        <label>Color</label>
+        <label>Price</label>
+        <precision>8</precision>
         <required>false</required>
+        <scale>2</scale>
         <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>White</fullName>
-                    <default>false</default>
-                    <label>White</label>
-                </value>
-                <value>
-                    <fullName>Pink</fullName>
-                    <default>false</default>
-                    <label>Pink</label>
-                </value>
-                <value>
-                    <fullName>Green</fullName>
-                    <default>false</default>
-                    <label>Green</label>
-                </value>
-                <value>
-                    <fullName>Black</fullName>
-                    <default>false</default>
-                    <label>Black</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Customer__c</fullName>
-        <description>Retail IDO Custom Field</description>
-        <externalId>false</externalId>
-        <label>Customer</label>
-        <referenceTo>Contact</referenceTo>
-        <relationshipLabel>Purchases</relationshipLabel>
-        <relationshipName>Item_Interestsab</relationshipName>
-        <relationshipOrder>0</relationshipOrder>
-        <reparentableMasterDetail>false</reparentableMasterDetail>
-        <trackTrending>false</trackTrending>
-        <type>MasterDetail</type>
-        <writeRequiresMasterRead>false</writeRequiresMasterRead>
-    </fields>
-    <fields>
-        <fullName>From__c</fullName>
-        <description>Retail IDO Custom Field</description>
-        <externalId>false</externalId>
-        <formula>IMAGE(&apos;/resource/1383764845000/sap_logo&apos;,&quot;SAP&quot;,20,40)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>From</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Image_Small__c</fullName>
-        <externalId>false</externalId>
-        <formula>IMAGE(Product__r.Small_Img_URL__c , &quot;Image&quot; )</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Product Image</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
+        <type>Currency</type>
     </fields>
     <fields>
         <fullName>Image__c</fullName>
+        <description>Retail IDO Custom Field</description>
         <externalId>false</externalId>
-        <formula>IMAGE( Product__r.Image_URL__c  , &quot;No Image&quot;, 180, 120)</formula>
+        <formula>Image(Product__r.Image_URL__c, &quot;Product&quot;, 50,50)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Image</label>
         <required>false</required>
@@ -138,51 +80,37 @@
     <fields>
         <fullName>Product__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
+        <description>Retail IDO Custom Field</description>
         <externalId>false</externalId>
         <label>Product</label>
         <referenceTo>Product2</referenceTo>
-        <relationshipLabel>Purchases</relationshipLabel>
-        <relationshipName>Purchases</relationshipName>
+        <relationshipLabel>Purchase Items</relationshipLabel>
+        <relationshipName>Purchase_Itemsab</relationshipName>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>Purchase_Amount__c</fullName>
+        <fullName>Purchase_History__c</fullName>
         <description>Retail IDO Custom Field</description>
         <externalId>false</externalId>
-        <label>Purchase Amount</label>
-        <summarizedField>Purchase_Item__c.Total_Amount__c</summarizedField>
-        <summaryForeignKey>Purchase_Item__c.Purchase_History__c</summaryForeignKey>
-        <summaryOperation>sum</summaryOperation>
+        <label>Purchase</label>
+        <referenceTo>Purchases__c</referenceTo>
+        <relationshipLabel>Purchase Items</relationshipLabel>
+        <relationshipName>Purchase_Itemsab</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
         <trackTrending>false</trackTrending>
-        <type>Summary</type>
-    </fields>
-    <fields>
-        <fullName>Purchase_Date__c</fullName>
-        <defaultValue>Today()</defaultValue>
-        <description>Retail IDO Custom Field</description>
-        <externalId>false</externalId>
-        <label>Purchase Date</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Purchased__c</fullName>
-        <defaultValue>false</defaultValue>
-        <description>Retail IDO Custom Field</description>
-        <externalId>false</externalId>
-        <label>Purchased</label>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
     </fields>
     <fields>
         <fullName>Quantity__c</fullName>
+        <defaultValue>1</defaultValue>
         <description>Retail IDO Custom Field</description>
         <externalId>false</externalId>
         <label>Quantity</label>
-        <precision>18</precision>
+        <precision>3</precision>
         <required>false</required>
         <scale>0</scale>
         <trackTrending>false</trackTrending>
@@ -190,10 +118,10 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Size__c</fullName>
+        <fullName>Status__c</fullName>
         <description>Retail IDO Custom Field</description>
         <externalId>false</externalId>
-        <label>Size</label>
+        <label>Status</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -201,40 +129,58 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>S</fullName>
+                    <fullName>PU in Store</fullName>
                     <default>false</default>
-                    <label>S</label>
+                    <label>PU in Store</label>
                 </value>
                 <value>
-                    <fullName>M</fullName>
+                    <fullName>Pending Shipment</fullName>
                     <default>false</default>
-                    <label>M</label>
+                    <label>Pending Shipment</label>
                 </value>
                 <value>
-                    <fullName>L</fullName>
+                    <fullName>Completed</fullName>
                     <default>false</default>
-                    <label>L</label>
+                    <label>Completed</label>
                 </value>
                 <value>
-                    <fullName>XL</fullName>
+                    <fullName>Out of Stock</fullName>
                     <default>false</default>
-                    <label>XL</label>
+                    <label>Out of Stock</label>
+                </value>
+                <value>
+                    <fullName>Returned</fullName>
+                    <default>false</default>
+                    <label>Returned</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
-    <label>Purchase History</label>
+    <fields>
+        <fullName>Total_Amount__c</fullName>
+        <description>Retail IDO Custom Field</description>
+        <externalId>false</externalId>
+        <formula>Amount__c *  Quantity__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <label>Purchase Item</label>
     <listViews>
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
     <nameField>
-        <displayFormat>{00000}</displayFormat>
-        <label>Purchase ID</label>
+        <displayFormat>PI-{YY}{MM}{DD}-{000}</displayFormat>
+        <label>Purchase Item Name</label>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Purchases</pluralLabel>
+    <pluralLabel>Purchase Items</pluralLabel>
     <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
