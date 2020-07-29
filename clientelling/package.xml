@@ -74,20 +74,20 @@
         <members>Product2.Product_Image__c</members>
         <members>Product2.Small_Img_URL__c</members>
         <members>Product2.purl__c</members>
-        <members>Purchase_Item__c.Amount__c</members>
+     <!--   <members>Purchase_Item__c.Amount__c</members>
         <members>Purchase_Item__c.Image__c</members>
         <members>Purchase_Item__c.Product__c</members>
         <members>Purchase_Item__c.Purchase_History__c</members>
         <members>Purchase_Item__c.Quantity__c</members>
         <members>Purchase_Item__c.Status__c</members>
-        <members>Purchase_Item__c.Total_Amount__c</members>
+        <members>Purchase_Item__c.Total_Amount__c</members>-->
         <members>Purchases__c.Color__c</members>
         <members>Purchases__c.Customer__c</members>
         <members>Purchases__c.From__c</members>
         <members>Purchases__c.Image_Small__c</members>
         <members>Purchases__c.Image__c</members>
         <members>Purchases__c.Product__c</members>
-        <members>Purchases__c.Purchase_Amount__c</members>
+     <!--   <members>Purchases__c.Purchase_Amount__c</members>-->
         <members>Purchases__c.Purchase_Date__c</members>
         <members>Purchases__c.Purchased__c</members>
         <members>Purchases__c.Quantity__c</members>
@@ -97,7 +97,7 @@
         <members>Recommended_Product__c.Customer__c</members>
         <members>Recommended_Product__c.Image__c</members>
         <members>Recommended_Product__c.Product__c</members>
-        <members>Wish_List__c.Amount__c</members>
+      <!--  <members>Wish_List__c.Amount__c</members>
         <members>Wish_List__c.Color__c</members>
         <members>Wish_List__c.Customer__c</members>
         <members>Wish_List__c.Delete__c</members>
@@ -105,7 +105,7 @@
         <members>Wish_List__c.Product__c</members>
         <members>Wish_List__c.Quantity__c</members>
         <members>Wish_List__c.Size__c</members>
-        <members>Wish_List__c.Wishlist_Date__c</members>
+        <members>Wish_List__c.Wishlist_Date__c</members>-->
         <name>CustomField</name>
     </types>
     <types>
