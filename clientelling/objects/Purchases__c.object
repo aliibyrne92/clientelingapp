@@ -146,7 +146,7 @@
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields>
+    </fields><!--
     <fields>
         <fullName>Purchase_Amount__c</fullName>
         <description>Retail IDO Custom Field</description>
@@ -157,7 +157,7 @@
         <summaryOperation>sum</summaryOperation>
         <trackTrending>false</trackTrending>
         <type>Summary</type>
-    </fields>
+    </fields>-->
     <fields>
         <fullName>Purchase_Date__c</fullName>
         <defaultValue>Today()</defaultValue>
