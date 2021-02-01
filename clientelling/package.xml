@@ -84,7 +84,7 @@
         <members>Purchase__c.Account__c</members>
         <members>Purchase__c.Image__c</members>
         <members>Purchase__c.Product__c</members>
-        <members>Purchase__c.Purchase_Amount__c</members>
+       <!-- <members>Purchase__c.Purchase_Amount__c</members>-->
         <members>Purchase__c.Purchase_Date__c</members>
         <members>Purchase__c.Purchased__c</members>
         <members>Purchase__c.Quantity__c</members>
@@ -107,8 +107,8 @@
     <types>
         <members>Appointment__c</members>
         <members>Clienteling_App_Configuration__c</members>
-       <!-- <members>Purchase_Item__c</members>
-        <members>Purchases__c</members> -->
+       <!-- <members>Purchase_Item__c</members>-->
+        <members>Purchase__c</members> 
         <members>Recommended_Product__c</members>
         <members>Wish_List__c</members>
         <name>CustomObject</name>
