@@ -59,7 +59,7 @@
         <description>Retail IDO Custom Field</description>
         <externalId>false</externalId>
         <label>Customer</label>
-        <referenceTo>Contact</referenceTo>
+        <referenceTo>Account</referenceTo>
         <relationshipLabel>Purchases</relationshipLabel>
         <relationshipName>Item_Interestsab</relationshipName>
         <relationshipOrder>0</relationshipOrder>
