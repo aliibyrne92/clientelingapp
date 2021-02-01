@@ -88,7 +88,7 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>Customer__c</fullName>
+        <fullName>Account__c</fullName>
         <description>Retail IDO Custom Field</description>
         <externalId>false</externalId>
         <label>Customer</label>
@@ -100,29 +100,6 @@
         <trackTrending>false</trackTrending>
         <type>MasterDetail</type>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
-    </fields>
-    <fields>
-        <fullName>From__c</fullName>
-        <description>Retail IDO Custom Field</description>
-        <externalId>false</externalId>
-        <formula>IMAGE(&apos;/resource/1383764845000/sap_logo&apos;,&quot;SAP&quot;,20,40)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>From</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Image_Small__c</fullName>
-        <externalId>false</externalId>
-        <formula>IMAGE(Product__r.Small_Img_URL__c , &quot;Image&quot; )</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Product Image</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Image__c</fullName>
@@ -147,7 +124,7 @@
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
-    <fields>
+  <!-- <fields>
         <fullName>Purchase_Amount__c</fullName>
         <description>Retail IDO Custom Field</description>
         <externalId>false</externalId>
@@ -157,7 +134,7 @@
         <summaryOperation>sum</summaryOperation>
         <trackTrending>false</trackTrending>
         <type>Summary</type>
-    </fields>
+    </fields> -->
     <fields>
         <fullName>Purchase_Date__c</fullName>
         <defaultValue>Today()</defaultValue>
@@ -188,40 +165,6 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Size__c</fullName>
-        <description>Retail IDO Custom Field</description>
-        <externalId>false</externalId>
-        <label>Size</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>S</fullName>
-                    <default>false</default>
-                    <label>S</label>
-                </value>
-                <value>
-                    <fullName>M</fullName>
-                    <default>false</default>
-                    <label>M</label>
-                </value>
-                <value>
-                    <fullName>L</fullName>
-                    <default>false</default>
-                    <label>L</label>
-                </value>
-                <value>
-                    <fullName>XL</fullName>
-                    <default>false</default>
-                    <label>XL</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
     </fields>
     <label>Purchase History</label>
     <listViews>

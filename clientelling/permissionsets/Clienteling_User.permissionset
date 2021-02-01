@@ -175,7 +175,7 @@
         <field>Product2.purl__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
+    <!--<fieldPermissions>
         <editable>true</editable>
         <field>Purchase_Item__c.Amount__c</field>
         <readable>true</readable>
@@ -204,55 +204,35 @@
         <editable>false</editable>
         <field>Purchase_Item__c.Total_Amount__c</field>
         <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Purchases__c.Color__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
+    </fieldPermissions> -->
     <fieldPermissions>
         <editable>false</editable>
-        <field>Purchases__c.From__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Purchases__c.Image_Small__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Purchases__c.Image__c</field>
+        <field>Purchase__c.Image__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Purchases__c.Product__c</field>
+        <field>Purchase__c.Product__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Purchases__c.Purchase_Amount__c</field>
+        <field>Purchase__c.Purchase_Amount__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Purchases__c.Purchase_Date__c</field>
+        <field>Purchase__c.Purchase_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Purchases__c.Purchased__c</field>
+        <field>Purchase__c.Purchased__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Purchases__c.Quantity__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Purchases__c.Size__c</field>
+        <field>Purchase__c.Quantity__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
