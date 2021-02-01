@@ -305,7 +305,7 @@
         <field>Task.WhoId</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
+  <!--  <fieldPermissions>
         <editable>true</editable>
         <field>Wish_List__c.Amount__c</field>
         <readable>true</readable>
@@ -344,7 +344,7 @@
         <editable>true</editable>
         <field>Wish_List__c.Wishlist_Date__c</field>
         <readable>true</readable>
-    </fieldPermissions>
+    </fieldPermissions> -->
     <hasActivationRequired>false</hasActivationRequired>
     <label>Clienteling User</label>
     <objectPermissions>
@@ -401,7 +401,7 @@
         <object>Recommended_Product__c</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
-    <objectPermissions>
+   <!-- <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
         <allowEdit>true</allowEdit>
@@ -409,7 +409,7 @@
         <modifyAllRecords>true</modifyAllRecords>
         <object>Wish_List__c</object>
         <viewAllRecords>true</viewAllRecords>
-    </objectPermissions>
+    </objectPermissions> -->
     <tabSettings>
         <tab>Appointment__c</tab>
         <visibility>Visible</visibility>
