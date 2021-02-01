@@ -53,40 +53,7 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
-    <fields>
-        <fullName>Color__c</fullName>
-        <description>Retail IDO Custom Field</description>
-        <externalId>false</externalId>
-        <label>Color</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>White</fullName>
-                    <default>false</default>
-                    <label>White</label>
-                </value>
-                <value>
-                    <fullName>Pink</fullName>
-                    <default>false</default>
-                    <label>Pink</label>
-                </value>
-                <value>
-                    <fullName>Green</fullName>
-                    <default>false</default>
-                    <label>Green</label>
-                </value>
-                <value>
-                    <fullName>Black</fullName>
-                    <default>false</default>
-                    <label>Black</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
+    
     <fields>
         <fullName>Account__c</fullName>
         <description>Retail IDO Custom Field</description>
