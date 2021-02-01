@@ -74,14 +74,14 @@
         <members>Product2.Product_Image__c</members>
         <members>Product2.Small_Img_URL__c</members>
         <members>Product2.purl__c</members>
-        <members>Purchase_Item__c.Amount__c</members>
+      <!--    <members>Purchase_Item__c.Amount__c</members>
         <members>Purchase_Item__c.Image__c</members>
         <members>Purchase_Item__c.Product__c</members>
         <members>Purchase_Item__c.Purchase_History__c</members>
         <members>Purchase_Item__c.Quantity__c</members>
         <members>Purchase_Item__c.Status__c</members>
         <members>Purchase_Item__c.Total_Amount__c</members>
-      <!--  <members>Purchases__c.Color__c</members>
+      <members>Purchases__c.Color__c</members>
         <members>Purchases__c.Customer__c</members>
         <members>Purchases__c.From__c</members>
         <members>Purchases__c.Image_Small__c</members>
@@ -111,8 +111,8 @@
     <types>
         <members>Appointment__c</members>
         <members>Clienteling_App_Configuration__c</members>
-        <members>Purchase_Item__c</members>
-        <members>Purchases__c</members>
+       <!-- <members>Purchase_Item__c</members>
+        <members>Purchases__c</members> -->
         <members>Recommended_Product__c</members>
         <members>Wish_List__c</members>
         <name>CustomObject</name>
@@ -138,9 +138,9 @@
     <types>
         <members>Appointment__c.All</members>
         <members>Clienteling_App_Configuration__c.All</members>
-        <members>Purchase_Item__c.All</members>
+      <!--  <members>Purchase_Item__c.All</members>
         <members>Purchases__c.All</members>
-        <members>Recommended_Product__c.All</members>
+        <members>Recommended_Product__c.All</members>-->
         <members>Wish_List__c.All</members>
         <name>ListView</name>
     </types>
