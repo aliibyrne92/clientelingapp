@@ -391,7 +391,7 @@
         <modifyAllRecords>false</modifyAllRecords>
         <object>Purchase__c</object>
         <viewAllRecords>false</viewAllRecords>
-    </objectPermissions> -->
+    </objectPermissions> 
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
@@ -401,7 +401,7 @@
         <object>Recommended_Product__c</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
-   <!-- <objectPermissions>
+    <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
         <allowEdit>true</allowEdit>
