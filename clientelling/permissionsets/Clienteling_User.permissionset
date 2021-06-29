@@ -285,7 +285,7 @@
         <field>Task.WhoId</field>
         <readable>true</readable>
     </fieldPermissions>
-  <!--  <fieldPermissions>
+   <fieldPermissions>
         <editable>true</editable>
         <field>Wish_List__c.Amount__c</field>
         <readable>true</readable>
@@ -363,7 +363,7 @@
         <object>Product2</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
-  <!--  <objectPermissions>
+  <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
         <allowEdit>true</allowEdit>
@@ -389,7 +389,7 @@
         <modifyAllRecords>true</modifyAllRecords>
         <object>Wish_List__c</object>
         <viewAllRecords>true</viewAllRecords>
-    </objectPermissions> -->
+    </objectPermissions> 
     <tabSettings>
         <tab>Appointment__c</tab>
         <visibility>Visible</visibility>
